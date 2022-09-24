@@ -47,7 +47,7 @@ function writePage() {
       page += `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" />`; //add page segment
       }
     } else {
-      page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" width="800px" />`;
+      page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" class="comic-page" />`;
     }
     //debug
     console.log("page code to insert - " + page);
