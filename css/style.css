@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}  
+
+body {
+    background-color: #ebebeb;
+}
+
+.nav{
+    align-items: center;
+    background-color: #ff5773;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 100%;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #fffda4;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.header h1 {
+    font-size:  24px;
+    font-weight: 400;
+}
+
+.content {
+    margin: 1em 10%
+}
+
+footer {
+    font-size: 10px;
+    height: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+
+.illustrations-container {
+    -webkit-column-count: 3;
+    -webkit-column-gap:   1em;
+    -moz-column-count:    3;
+    -moz-column-gap:      1em;
+    column-count:         3;
+    column-gap:           1em;
+    line-height: 2em;
+    margin: 1em;
+}
+
+
+.illustrations-container img {
+    max-width: 100%;
+    transition: all .1s ease-in-out; 
+    z-index: 10;
+}  
+
+.illuContainer img {
+    height: auto !important;
+    /* transition: all .2s ease-in-out;  */
+    width: 100% !important;
+}
+
+ .socials {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+ }
+
+ .about {
+    margin: 2em 15em;
+ }
+
+ .comics-page {
+    display: flex;
+    gap: 5em;
+ }
+
+ .comics-page a {
+    color: black;
+    text-decoration: none;
+    margin: 1em;
+ }
+
+ .comic-panel {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+ }
+
+ .formatted-link {
+    color: #ff5773;
+    text-decoration: none;
+}
+
+.formatted-link:hover {
+    background-color: #ff5773;
+    color: white;
+    max-width: 200px;
+}
+
+/* style nav button images */
+.comicNav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+  
+  .comicNav img {
+    width: 50px;
+    padding-right: 30px;
+  }
+
+
+ @media (max-width: 1200px) {
+    .illustrations-container {
+        -webkit-column-count: 2;
+        -webkit-column-gap:   1em;
+        -moz-column-count:    2;
+        -moz-column-gap:      1em;
+        column-count:         2;
+        column-gap:           1em;
+        line-height: 2em;
+        margin: 1em;
+    }
+    .illuContainer {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+        }
+  }
+
+  @media (max-width: 800px) {
+    .illuContainer {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+   }
+ }
+
+
+@media (max-width: 600px) {
+    .illustrations-container {
+        -webkit-column-count: 1;
+        -webkit-column-gap:   1em;
+        -moz-column-count:    1;
+        -moz-column-gap:      1em;
+        column-count:         1;
+        column-gap:           1em;
+        line-height: 2em;
+        margin: 1em;
+    }
+
+    .comics-page {
+        flex-direction: column;
+        justify-content: center;
+     }
+  }
