@@ -7,26 +7,28 @@
 }  
 
 body {
-    background-color: #ebebeb;
+    background-color: #242424;
+    color: #d3d3d3;
 }
 
 .nav{
     align-items: center;
-    background-color: #ff5773;
+    background-color: #50335b;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
     height: 50px;
     width: 100%;
 }
 
 .nav a {
-    color: white;
+    color: #d3d3d3;
     text-decoration: none;
     font-size: 14px;
 }
 
 .nav a:hover {
-    color: #fffda4;
+    color: #ff7e3d;
 }
 
 .header {
@@ -93,7 +95,7 @@ footer {
  }
 
  .comics-page a {
-    color: black;
+    color: #d3d3d3;
     text-decoration: none;
     margin: 1em;
  }
@@ -104,14 +106,33 @@ footer {
     gap: 1em;
  }
 
+ #hcdArchive {
+    background-color: #50335b;
+    padding: 1em;
+}
+
+#hcdArchive h3 {
+    text-align: center;
+    padding: .5em;
+}
+
+#hcdArchive ul {
+    color: #a24752;
+    padding: .5em 35%;
+}
+
+#sequentialArchive {
+    width: 80%;
+}
+
  .formatted-link {
-    color: #ff5773;
+    color: #ff7e3d;
     text-decoration: none;
 }
 
 .formatted-link:hover {
-    background-color: #ff5773;
-    color: white;
+    background-color: #ff7e3d;
+    color: #a24752;
     max-width: 200px;
 }
 
@@ -186,4 +207,8 @@ footer {
         flex-direction: column;
         justify-content: center;
      }
+
+     #sequentialArchive {
+        width: 100%;
+    }
   }

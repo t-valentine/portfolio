@@ -48,10 +48,6 @@ function writePage() {
       }
     } else {
       page = `<img alt="` + altText + `" title="` + altText + `" src="` + path + `" class="comic-page" />`;    }
-    //debug
-    console.log("page code to insert - " + page);
-    console.log("alt text to print - " + altText);
-    //
     return page;
   }
 }
