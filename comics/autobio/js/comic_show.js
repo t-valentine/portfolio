@@ -5,8 +5,6 @@ writePageClickable(".writePageClickable",true); //show the current page. to togg
 
 keyNav(); //enables navigation through the comic with the arrow keys and WSAD. It doesn't need a div with a class name, it automatically works. delete or comment out (add // at the beginning) here to disable.
 
-// below this point is more under-the-hood type stuff that we only encourage messing with if you're more familiar with js, 
-// but it's still commented as extensively as possible anyway just in case
 
 //SHOW COMIC PAGE, with clickable link
 function writePageClickable(div,clickable) {
