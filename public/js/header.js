@@ -1,11 +1,11 @@
 document.querySelector(".writeHeader").innerHTML = `
     <header>
         <div class="nav">
-            <a href="/public/comic-home.html">Comics</a>
+        <a href="https://h0neymice.neocities.org/comic-home.html">Comics</a>
             <p>&#128123;</p>
-            <a href="/public/index.html">Illustrations</a>
+            <a href="https://h0neymice.neocities.org/index.html">Illustrations</a>
             <p>&#128123;</p>
-            <a href="/public/about.html">About</a>
+            <a href="https://h0neymice.neocities.org/about.html">About</a>
         </div>
         <div class="header">
             <h1> &#127875; Tobi Valentine &#127875; </h1>
