@@ -4,9 +4,9 @@ document.querySelector(".writeHeader").innerHTML = `
             <h1> &#10052 Tobi Valentine &#10052 </h1>
         </div>
         <div class="nav">
-        <a href="https://h0neymice.neocities.org/comic-home.html">Comics</a>
-        <a href="https://h0neymice.neocities.org/index.html">Illustrations</a>
-        <a href="https://h0neymice.neocities.org/about.html">About</a>
+        <a href="https://h0neymice.neocities.org/comic-home.html" class="unselected-page">Comics</a>
+        <a href="https://h0neymice.neocities.org/index.html" class="unselected-page">Illustrations</a>
+        <a href="https://h0neymice.neocities.org/about.html" class="unselected-page">About</a>
         </div>
     </header>
 `;
