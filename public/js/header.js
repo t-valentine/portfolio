@@ -1,18 +1,36 @@
 document.querySelector(".writeHeader").innerHTML = `
     <header>
-        <div class="nav">
-        <a href="https://h0neymice.neocities.org/comic-home.html">Comics</a>
-            <p>&#128123;</p>
-            <a href="https://h0neymice.neocities.org/index.html">Illustrations</a>
-            <p>&#128123;</p>
-            <a href="https://h0neymice.neocities.org/about.html">About</a>
-        </div>
         <div class="header">
-            <h1> &#127875; Tobi Valentine &#127875; </h1>
+            <h1> &#10052 Tobi Valentine &#10052 </h1>
+        </div>
+        <div class="nav">
+            <a href="./comic-home.html" id="comics" class="unselected-page">Comics</a>
+            <a href="./index.html" id="home" class="unselected-page">Illustrations</a>
+            <a href="./about.html" id="about" class="unselected-page">About</a>
         </div>
     </header>
 `;
-/*
-<a href="https://h0neymice.neocities.org/comic-home.html">Comics</a>
+
+{
+  /* <a href="https://h0neymice.neocities.org/comic-home.html">Comics</a>
 <a href="https://h0neymice.neocities.org/index.html">Illustrations</a>
 <a href="https://h0neymice.neocities.org/about.html">About</a> */
+}
+
+let currentURL = document.URL;
+
+console.log(currentURL);
+
+if (currentURL.includes("index.html")) {
+  console.log("index page");
+  document.getElementById("home").classList.remove("unselected-page");
+  document.getElementById("home").classList.add("selected-page");
+} else if (currentURL.includes("comic-home.html")) {
+  console.log("comics page");
+  document.getElementById("comics").classList.remove("unselected-page");
+  document.getElementById("comics").classList.add("selected-page");
+} else if (currentURL.includes("about.html")) {
+  console.log("about page");
+  document.getElementById("about").classList.remove("unselected-page");
+  document.getElementById("about").classList.add("selected-page");
+}
