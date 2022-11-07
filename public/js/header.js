@@ -21,14 +21,14 @@ let currentURL = document.URL;
 
 console.log(currentURL);
 
-if (currentURL.includes("index.html")) {
-  console.log("index page");
-  document.getElementById("home").classList.remove("unselected-page");
-  document.getElementById("home").classList.add("selected-page");
-} else if (currentURL.includes("comic-home.html")) {
+if (currentURL.includes("comic-home.html") || currentURL.includes("comics")) {
   console.log("comics page");
   document.getElementById("comics").classList.remove("unselected-page");
   document.getElementById("comics").classList.add("selected-page");
+} else if (currentURL.includes("index.html")) {
+  console.log("index page");
+  document.getElementById("home").classList.remove("unselected-page");
+  document.getElementById("home").classList.add("selected-page");
 } else if (currentURL.includes("about.html")) {
   console.log("about page");
   document.getElementById("about").classList.remove("unselected-page");
