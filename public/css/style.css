@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+@font-face {
+
+    font-family: AtkinsonHyperlegible;
+    
+    src: url(./font.ttf);
+    
+    }
+
 * {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-family: 'AtkinsonHyperlegible', sans-serif;
+    font-size: 16px;
 }  
 
 body {
