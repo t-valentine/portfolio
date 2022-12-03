@@ -50,9 +50,15 @@ body {
     height: 150px;
 }
 
-.header h1 {
+.nameHeader {
+    color: #BCD2EE;
     font-size:  24px;
     font-weight: 400;
+    text-decoration: none;
+}
+
+.nameHeader:hover {
+    color: white;
 }
 
 .content {
