@@ -96,6 +96,10 @@ footer {
     flex-wrap: wrap;
 }
 
+#hideshow img {
+    margin-bottom: 10px;
+}
+
 #hideshow div {
     text-align: center;
 }
