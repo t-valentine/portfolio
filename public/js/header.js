@@ -30,27 +30,30 @@ document.querySelector(".writeHeader").innerHTML = `
 `;
 
 
-if (currentURL.includes("comic-home.html") || currentURL.includes("comics")) {
+if (currentURL.includes("comic-home") || currentURL.includes("comics")) {
+  /*
   document.getElementById("home").classList.remove("selected-page");
   document.getElementById("home").classList.add("unselected-page");
   document.getElementById("about").classList.remove("selected-page");
-  document.getElementById("about").classList.add("unselected-page");
+  document.getElementById("about").classList.add("unselected-page");*/
 
   document.getElementById("comics").classList.remove("unselected-page");
   document.getElementById("comics").classList.add("selected-page");
-} else if (currentURL.includes("index.html")) {
+} else if (currentURL.includes("index")) {
+  /*
   document.getElementById("comics").classList.remove("selected-page");
   document.getElementById("comics").classList.add("unselected-page");
   document.getElementById("about").classList.remove("selected-page");
-  document.getElementById("about").classList.add("unselected-page");
+  document.getElementById("about").classList.add("unselected-page");*/
 
   document.getElementById("home").classList.remove("unselected-page");
   document.getElementById("home").classList.add("selected-page");
-} else if (currentURL.includes("about.html")) {
+} else if (currentURL.includes("about")) {
+  /*
   document.getElementById("comics").classList.remove("selected-page");
   document.getElementById("comics").classList.add("unselected-page");
   document.getElementById("home").classList.remove("selected-page");
-  document.getElementById("home").classList.add("unselected-page");
+  document.getElementById("home").classList.add("unselected-page");*/
 
   document.getElementById("about").classList.remove("unselected-page");
   document.getElementById("about").classList.add("selected-page");
