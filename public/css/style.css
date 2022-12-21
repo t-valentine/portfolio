@@ -27,7 +27,7 @@ body {
     gap: 10%;
     height: 50px;
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .selected-page {
@@ -70,7 +70,7 @@ body {
 }
 
 .content {
-    margin: 1em 10%
+    margin: 1em 10%;
 }
 
 footer {
@@ -108,7 +108,7 @@ footer {
 }
 
 #featureimg {
-    height: 700px;
+    background-color: red;
 }
 
 /*

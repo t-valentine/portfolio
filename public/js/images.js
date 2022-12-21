@@ -10,22 +10,18 @@ const hideShow = document.getElementById('hideshow');
 
 const clickPic = document.querySelectorAll('.clickablepic'); //creates a nodelist
 
+
 for(let i=0; i < clickPic.length; i++){
     clickPic[i].addEventListener('click', changePic);
 }
 
 //fxn to click shit and change the title and description
 function changePic(e) {
-    //test if class isa pic type else make it blank (Default)
+    //test if class isa pic type else make it default
     if (e.target.className === 'clickablepic'){
         featImg.src = e.target.src; 
         imgTitle.innerText = e.target.title;
         imgDesc.innerText = e.target.dataset.desc;
         featImg.style.border="3px white solid";
-    } else {
-        featImg.src = "images/blank.gif"
-        imgTitle.innerText = "";
-        imgDesc.innerText = "";
-        featImg.style.border="none";
     }
 }
