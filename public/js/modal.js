@@ -43,5 +43,28 @@ function changePic(e) {
     imgTitle.innerText = e.target.title;
     imgDesc.innerText = e.target.dataset.desc;
     modal.style.top = window.scrollY + 20 + "px";
+    if (window.innerWidth < 950) {
+      modal.style.maxHeight = window.innerWidth - 50 + "px";
+      modal.style.maxWidth = window.innerWidth - 50 + "px";
+      featImg.style.maxHeight = window.innerWidth - 150 + "px";
+      featImg.style.maxWidth = window.innerWidth - 150 + "px";
+      if (window.innerWidth < 600) {
+        modal.style.maxHeight = window.innerWidth - 10 + "px";
+        modal.style.maxWidth = window.innerWidth - 10 + "px";
+        featImg.style.maxHeight = window.innerWidth - 20 + "px";
+        featImg.style.maxWidth = window.innerWidth - 20 + "px";
+      }
+    }
   }
 }
+
+/*
+
+.modal {
+  max-height: 700px;
+  max-width: 700px;
+}
+#featureimg {
+  max-height: 650px;
+  max-width: 650px;
+}*/

@@ -110,29 +110,26 @@ footer {
 }
 
 
-.illustrations-container img {
+.clickablepic {
     max-width: 100%;
-    transition: all .1s ease-in-out; 
-    z-index: 10;
-}  
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+  }
 
-.illuContainer img {
-    height: auto !important;
-    /* transition: all .2s ease-in-out;  */
-    width: 100% !important;
-}
+  .clickablepic:hover {
+    transform: scale(1.02);
+  }
 
 /* Illustrations Modal*/
 .modal {
     align-items: center;
+    background-color: #24305E;
+    border: none;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 15px;
     gap: 15px;
+    justify-content: center;
     padding: 2em;
     position: absolute;
     max-height: 900px;
@@ -151,37 +148,29 @@ footer {
     padding: 0px 50px;
     text-align: center;
     width: 100%;
+    transition: 1s;
   }
-  
-  .modal input {
-    padding: 0.7rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 0.9em;
-  }
-  
-  .modal p {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.4rem 0 0.2rem;
+
+  .flex div p {
+    color: white;
   }
   
   .btn-close {
-    background: #eee;
+    background-color:#a8d0e6;
+    border: none;
+    color: #374785;
     border-radius: 50%;
+  }
+
+  .btn-close:hover {
+    cursor: pointer;
+    background-color: white;
+    color:#24305E;
   }
 
   #featureimg {
     max-height: 850px;
     max-width: 850px;
-  }
-
-  .clickablepic {
-    cursor: pointer;
-  }
-
-  .clickablepic:hover {
-    transform: scale(1.01);
   }
   
   .overlay {
@@ -332,6 +321,15 @@ footer {
     .comic-page {
         width: 90%;
     }
+    .modal {
+        max-height: 800px;
+        max-width: 800px;
+      }
+    #featureimg {
+        max-height: 750px;
+        max-width: 750px;
+      }
+
 
     .contact-form {
         width: 100%;
