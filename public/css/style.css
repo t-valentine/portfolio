@@ -73,7 +73,7 @@ body {
     margin: 1em 10%
 }
 
-.illu-page {
+.illu-page { /* Specific styling to center modal */
  display: flex; 
  justify-content: center;
 }
@@ -97,7 +97,6 @@ footer {
 }
 
 /*Illustrations Page*/
-
 .illustrations-container {
     -webkit-column-count: 3;
     -webkit-column-gap:   1em;

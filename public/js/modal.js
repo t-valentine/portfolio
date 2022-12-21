@@ -46,6 +46,7 @@ function changePic(e) {
   }
 }
 
+// updates modal and image size
 let updateModalSize = () => {
   if (window.innerWidth < 950 && window.innerWidth >= 600) {
     modal.style.maxHeight = window.innerWidth - 50 + "px";
@@ -71,14 +72,3 @@ let updateModalSize = () => {
 
 window.addEventListener("load", updateModalSize);
 window.onresize = updateModalSize;
-
-/*
-
-.modal {
-  max-height: 700px;
-  max-width: 700px;
-}
-#featureimg {
-  max-height: 650px;
-  max-width: 650px;
-}*/
