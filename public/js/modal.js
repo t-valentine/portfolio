@@ -1,7 +1,18 @@
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
-const openModalBtn = document.querySelector(".btn-open");
+const clickPic = document.querySelectorAll(".clickablepic");
 const closeModalBtn = document.querySelector(".btn-close");
+
+// open modal function
+const openModal = function (e) {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  changePic(e);
+};
+
+for (let i = 0; i < clickPic.length; i++) {
+  clickPic[i].addEventListener("click", openModal);
+}
 
 // close modal function
 const closeModal = function () {
@@ -20,10 +31,16 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// open modal function
-const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
-// open modal event
-openModalBtn.addEventListener("click", openModal);
+const featImg = document.getElementById("featureimg");
+const imgTitle = document.getElementById("imgtitle");
+const imgDesc = document.getElementById("imgdesc");
+
+//fxn to click shit and change the title and description
+function changePic(e) {
+  //test if class isa pic type else make it default
+  if (e.target.className === "clickablepic") {
+    featImg.src = e.target.src;
+    imgTitle.innerText = e.target.title;
+    imgDesc.innerText = e.target.dataset.desc;
+  }
+}

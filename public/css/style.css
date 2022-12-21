@@ -119,11 +119,11 @@ footer {
 
 /* Illustrations Modal*/
 .modal {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.4rem;
-    width: 450px;
     padding: 1.3rem;
     min-height: 250px;
     position: absolute;
@@ -132,6 +132,7 @@ footer {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
+    width: 75%;
   }
   
   .modal .flex {
@@ -153,33 +154,23 @@ footer {
     margin: 0.4rem 0 0.2rem;
   }
   
-  button {
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 0.8rem 1.4rem;
-    font-weight: 700;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1em;
-  }
-  
-  .btn-open {
-    position: absolute;
-    bottom: 150px;
-  }
-  
   .btn-close {
-    transform: translate(10px, -20px);
-    padding: 0.5rem 0.7rem;
+    transform: translate(300px, 0px);
     background: #eee;
     border-radius: 50%;
+  }
+
+  #featureimg {
+    max-height: 500px;
+    max-width: 790px;
+  }
+
+  .clickablepic {
+    cursor: pointer;
+  }
+
+  .clickablepic:hover {
+    transform: scale(1.01);
   }
   
   .overlay {
