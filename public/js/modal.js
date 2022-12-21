@@ -8,7 +8,6 @@ const openModal = function (e) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
   changePic(e);
-  modal.scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 for (let i = 0; i < clickPic.length; i++) {
@@ -43,5 +42,6 @@ function changePic(e) {
     featImg.src = e.target.src;
     imgTitle.innerText = e.target.title;
     imgDesc.innerText = e.target.dataset.desc;
+    modal.style.top = window.scrollY + 20 + "px";
   }
 }

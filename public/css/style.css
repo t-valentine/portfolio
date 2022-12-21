@@ -73,6 +73,11 @@ body {
     margin: 1em 10%
 }
 
+.illu-page {
+ display: flex; 
+ justify-content: center;
+}
+
 .formatted-link {
     color: #F87C7C;
     text-decoration: none;
@@ -124,15 +129,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     
-    align-self: center;
-    
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
     gap: 15px;
     padding: 2em;
     position: absolute;
-    top: 15%;
     max-height: 900px;
     max-width: 900px;
     z-index: 2;
