@@ -8,6 +8,7 @@ const openModal = function (e) {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
   changePic(e);
+  modal.scrollIntoView({ block: "start", behavior: "smooth" });
 };
 
 for (let i = 0; i < clickPic.length; i++) {

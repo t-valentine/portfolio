@@ -123,22 +123,32 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.4rem;
-    padding: 1.3rem;
-    min-height: 250px;
-    position: absolute;
-    z-index: 2;
-    top: 20%;
+    
+    align-self: center;
+    
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
-    width: 75%;
+    gap: 15px;
+    padding: 2em;
+    position: absolute;
+    top: 15%;
+    max-height: 900px;
+    max-width: 900px;
+    z-index: 2;
   }
   
-  .modal .flex {
+ .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  .flex div {
+    padding: 0px 50px;
+    text-align: center;
+    width: 100%;
   }
   
   .modal input {
@@ -155,14 +165,13 @@ footer {
   }
   
   .btn-close {
-    transform: translate(300px, 0px);
     background: #eee;
     border-radius: 50%;
   }
 
   #featureimg {
-    max-height: 500px;
-    max-width: 790px;
+    max-height: 850px;
+    max-width: 850px;
   }
 
   .clickablepic {
