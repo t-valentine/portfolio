@@ -86,21 +86,35 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 2em;
 }
 
 #hideshow {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#hideshow div {
+    text-align: center;
+}
+
+.clickablepic:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .illustrations-list{
     align-items: center;
+    background-color: #91b5e4;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5px;
+    justify-content: center;
+    gap:10px;
+    padding: 10px 20px;
 }
 
 .illustrations-list img{
@@ -108,35 +122,10 @@ footer {
 }
 
 #featureimg {
-    background-color: red;
+    max-height: 500px;
+    max-width: 790px;
 }
 
-/*
-
-.illustrations-list {
-    -webkit-column-count: 3;
-    -webkit-column-gap:   1em;
-    -moz-column-count:    3;
-    -moz-column-gap:      1em;
-    column-count:         3;
-    column-gap:           1em;
-    line-height: 2em;
-    margin: 1em;
-}
-
-
-.illustrations-container img {
-    max-width: 100%;
-    transition: all .1s ease-in-out; 
-    z-index: 10;
-}  
-
-.illuContainer img {
-    height: auto !important;
-    width: 100% !important;
-}
-
-*/
  .socials {
     align-items: center;
     display: flex;
@@ -281,6 +270,9 @@ footer {
   }
 
   @media (max-width: 800px) {
+    #featureimg {
+        max-width: 500px;
+    }
     .illuContainer {
    -moz-column-count:    1;
    -webkit-column-count: 1;
@@ -291,7 +283,7 @@ footer {
 
 @media (max-width: 600px) {
     #featureimg  {
-        height: 300px;
+        max-width: 300px;
     }
 
     .comics-page {

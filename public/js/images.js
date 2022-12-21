@@ -22,6 +22,5 @@ function changePic(e) {
         featImg.src = e.target.src; 
         imgTitle.innerText = e.target.title;
         imgDesc.innerText = e.target.dataset.desc;
-        featImg.style.border="3px white solid";
     }
 }
