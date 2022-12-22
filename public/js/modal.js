@@ -55,6 +55,12 @@ let updateModalSize = () => {
     modal.style.padding = "15px";
     padding = 15;
   }
+  if (windowWidth <= 1050) {
+    closeModalBtn.style.right = "-5px";
+  }
+  else {
+    closeModalBtn.style.right = null;
+  }
 
   featImg.style.maxHeight = windowHeight - 100 + "px";
   featImg.style.maxWidth = windowWidth - 100 + "px";
