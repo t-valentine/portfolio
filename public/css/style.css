@@ -122,14 +122,11 @@ footer {
 /* Illustrations Modal*/
 .modal {
     align-items: center;
-    background-color: #24305E;
-    border: none;
-    border-radius: 15px;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
-    padding: 2em;
     position: absolute;
     max-height: 900px;
     max-width: 900px;
@@ -146,6 +143,7 @@ footer {
   .flex div {
     padding: 0px 50px;
     text-align: center;
+    height: 35px;
     width: 100%;
     transition: 1s;
   }
@@ -303,7 +301,6 @@ footer {
         -moz-column-gap:      1em;
         column-count:         2;
         column-gap:           1em;
-        line-height: 2em;
         margin: 1em;
     }
     .illuContainer {
@@ -320,39 +317,19 @@ footer {
     .comic-page {
         width: 90%;
     }
-    .modal {
-        max-height: 800px;
-        max-width: 800px;
-      }
-    #featureimg {
-        max-height: 750px;
-        max-width: 750px;
-      }
-
-
     .contact-form {
         width: 100%;
     }
   }
 
-  @media (max-width: 800px) {
-    .illuContainer {
-   -moz-column-count:    1;
-   -webkit-column-count: 1;
-   column-count:         1;
-   }
- }
-
-
 @media (max-width: 600px) {
     .illustrations-container {
-        -webkit-column-count: 1;
+        -webkit-column-count: 2;
         -webkit-column-gap:   1em;
-        -moz-column-count:    1;
+        -moz-column-count:    2;
         -moz-column-gap:      1em;
-        column-count:         1;
+        column-count:         2;
         column-gap:           1em;
-        line-height: 2em;
         margin: 1em;
     }
 
