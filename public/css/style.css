@@ -181,7 +181,7 @@ footer {
     display: none;
   }
 
-/*Comics Pages*/
+/*Comics Home Page*/
  .comics-page {
     display: flex;
     gap: 5em;
@@ -232,7 +232,7 @@ footer {
  }
 
 
-/* style nav button images */
+/* Individual Comic Pages */
 .comicNav {
     display: flex;
     flex-wrap: nowrap;
@@ -247,7 +247,7 @@ footer {
   }
 
   .comic-page {
-    width: 800px;
+    max-width: 700px;
   }
 
 /* Contact Form */
