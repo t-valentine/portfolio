@@ -308,18 +308,15 @@ const switchImage = () => {
     switch (selection) {
         case "milk_pinup":
             createMessage("Okay- good luck making 'Milk! pinups.'");
-            console.log("milk");
             img.src = "./img/secret/milkpinup.png";
             generatePuzzle();
             break;
         case "s_dinner": 
-            console.log("strahd");
             createMessage("Oooh, you want to see a WIP? Ok- here's 'Strahd's Dinner'!");
             img.src = "./img/secret/strahddinner.png";
             generatePuzzle();
             break;
         case "v_comic":
-            console.log("vik")
             createMessage("This is a half-baked comic alright...");
             img.src = "./img/secret/vikcomic.png";
             generatePuzzle();
@@ -328,3 +325,9 @@ const switchImage = () => {
             result.append(" ");
     }
   }
+
+
+window.addEventListener("load", (event) => {
+  img.src = "./img/secret/default.png";
+  generatePuzzle();
+});
