@@ -6,7 +6,7 @@ const stage = canvas.getContext("2d");
 
 const img = new Image();
 
-let difficulty = 5;
+let difficulty = 4;
 
 let pieces;
 
