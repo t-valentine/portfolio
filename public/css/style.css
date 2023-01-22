@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @font-face {
-
     font-family: AtkinsonHyperlegible;
-    
     src: url(./font.ttf);
-    
-    }
+}
 
 * {
     margin: 0;
@@ -16,7 +13,7 @@
 
 body {
     background-color: #24305E;
-    color: #BCD2EE;
+    color: white;
 }
 
 .nav{
