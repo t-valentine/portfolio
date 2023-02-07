@@ -133,7 +133,7 @@ footer {
     height: 35px;
   }
 
-  .flex p {
+ #imgtitle, #imgdesc {
     color: white;
   }
   
@@ -211,20 +211,6 @@ footer {
     width: 80%;
 }
 
-
-
-/*About Page */
-.socials {
-    align-items: center;
-    display: flex;
-    gap: 1em;
- }
-
- .about {
-    margin: 2em 15em;
- }
-
-
 /* Individual Comic Pages */
 .comicNav {
     display: flex;
@@ -244,33 +230,39 @@ footer {
     max-width: 650px;
   }
 
+
+/*About Page */
+.socials {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+ }
+
+ .about {
+    margin: 2em 15em;
+ }
+
+
 /* Contact Form */
 .contact-form {
     border: #374785 solid 2px;
     border-radius: 5px;
     background-color: #374785;
-    width: 70%;
+    width: 100%;
+    padding: 10px;
 }
 
 .contact-form h2 {
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .contact-items {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    margin: 1em;
-}
-
-.contact-form div {
-    align-items: center;
-    display: flex;
     justify-content: center;
     gap: 1em;
 }
