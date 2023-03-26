@@ -1,0 +1,46 @@
+.comics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: red;
+}
+
+#showComic {
+  padding: 0;
+}
+
+/* Individual Comic Pages */
+.comicNav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+  }
+  
+  .comicNav img {
+    width: 50px;
+  }
+
+  .comic-page {
+    margin: 10px;
+    width: 80vw;
+    max-width: 650px;
+  }
+
+
+  @media all and (max-width: 901px) {
+    .comic-page {
+      width: 100%;
+  }
+  }
+
+@media all and (max-width: 801px) {
+  .comic-page {
+    width: 100%;
+}
+}
