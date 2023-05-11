@@ -25,7 +25,8 @@ body {
 }
 
 #mainContent {
-	background-color: #fbf4ef;
+	/*background-color: #fbf4ef;*/
+	background-color: red;
 	color: #2e2e2e;
 	/*
   background-size: 25px 25px;
@@ -33,7 +34,6 @@ body {
     linear-gradient(to right, #bdf0fc 1px, transparent 1px),
     linear-gradient(to bottom, #bdf0fc 1px, transparent 1px);
   */
-	z-index: 1;
 	padding: 2em;
 }
 

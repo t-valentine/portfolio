@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="css/illustrations_style.css">
   </head>
   <body>
-    <nav id="mainNav"> 
-        <a href="/index.html">
-          <img src="./img/logo.png" id="header-image">
-        </a>
-        <a href="index.html" class="nav-links">Illustrations</a>
-        <a href="comics.html" class="nav-links">Comics</a></li>
-        <a href="extras.html" class="nav-links">Miscellaneous</a></li>
-        <a href="about.html" class="nav-links">About</a>
-    </nav>
+    <nav id="mainNav"></nav>
     <content id="mainContent" class="illu-page">
       <section class="modal hidden">
         
@@ -36,6 +28,9 @@
       </section>
         <div class="overlay hidden"></div>
       <div class="illustrations-container">
+          <!--
+            could add style="grid-column-end: span 2;" to any of these if i wanted
+          -->
           <img src='./img/portfolio/ishmael.webp' data-desc="2022" class="clickablepic" alt="TBA" title="Ishmael and Ravens"/>
           <img src='./img/portfolio/jackandgloom.webp' data-desc="2021" class="clickablepic" alt="TBA" title="Deal with the Devil(s)"/>
           <img src='./img/portfolio/strahd.webp' data-desc="2022" class="clickablepic" alt="TBA" title="The Man Who Sold the World"/>
@@ -54,7 +49,7 @@
     </content>
     <footer id="pageFooter"></footer>
 
-   <!-- <script src="js/nav.js" async defer></script>-->
+   <script src="js/nav.js" async defer></script>
     <script src="js/modal.js" async defer></script>
     <script src="js/footer.js" async defer></script>
   </body>
