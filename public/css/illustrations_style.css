@@ -1,4 +1,5 @@
-.illu-page { /* Specific styling to center modal */
+.illu-page { 
+  /* Specific styling to center modal */
     display: flex; 
     justify-content: center;
     padding: 0;
@@ -6,8 +7,14 @@
 }
 
 .illustrations-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: masonry;
+  /*
   columns: 3 auto;
   line-height: 2em;
+  */
 }
 
 #featureimg {
@@ -18,7 +25,7 @@
 .clickablepic {
   max-width: 100%;
   cursor: pointer;
-  transition: all .5s ease-in-out; 
+  transition: all .20s ease-in-out; 
 }
   
 .clickablepic:hover {
@@ -85,7 +92,7 @@
 }
 
 
-  
+/*
 @media (max-width: 901px) {
   .illustrations-container {
     columns: 2 auto;
@@ -96,4 +103,4 @@
   .illustrations-container {
     columns: 1;
 }
-}
+}*/
