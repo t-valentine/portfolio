@@ -10,8 +10,8 @@ document.querySelector("#mainNav").innerHTML = `
   <a href="` +
   relativePath +
   `/index.html">    <img src="` +
-  relativePath + `/img/logo.png" id="header-image">
-  <div class="desktop-menu"></a>
+  relativePath + `/img/logo.png" id="header-image"></a>
+  <div class="desktop-menu">
       <a href="` +
       relativePath +
       `/index.html">Illustrations</a>
