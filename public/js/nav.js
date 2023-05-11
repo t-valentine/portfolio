@@ -9,6 +9,7 @@ document.querySelector("#mainNav").innerHTML = `
   relativePath +
   `/index.html">    <img src="` +
   relativePath + `/img/logo.png" id="header-image">
+  <div id="secondary-nav">
 <a href="` +
 relativePath +
 `/index.html" class="nav-links">Illustrations</a>
@@ -21,4 +22,5 @@ relativePath +
 <a href="` +
 relativePath +
 `/about.html" class="nav-links">About</a>
+</div>
 `;
