@@ -121,6 +121,38 @@ nav {
 	width: 60%;
 }
 
+/* Project Page */
+.project-card {
+	background-color: #dbcbbe;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 0.25em 2em;
+	padding-bottom: 1em;
+	margin: 10px 0;
+}
+
+.project-card h2 {
+	text-align: center;
+}
+
+.project-card > div {
+	align-items: center;
+	display: flex;
+	gap: 20px;
+}
+
+.project-card > div > img {
+	width: 30vw;
+}
+
+.project-card > div a {
+	color: #725c52;
+}
+
+.project-card > div a:hover {
+	color: #ee7962;
+}
+
 /* About Page Styling */
 #about-columns {
 	display: flex;
@@ -178,6 +210,15 @@ textarea {
 	font-size: 0.78em;
 }
 
+@media all and (max-width: 800px) {
+	.project-card > div {
+		flex-direction: column;
+	}
+	.project-card > div > img {
+		width: 60vw;
+	}
+}
+
 @media all and (max-width: 600px) {
 	nav {
 		flex-direction: column;
@@ -191,6 +232,9 @@ textarea {
 
 	#about-columns > div {
 		width: 100%;
+	}
+	.project-card {
+		margin: 10px -30px;
 	}
 }
 
