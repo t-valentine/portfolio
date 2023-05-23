@@ -10,7 +10,7 @@ document.querySelector("#mainNav").innerHTML =
 	relativePath +
 	`/index.html">    <img src="` +
 	relativePath +
-	`/img/logo.png" id="header-image">
+	`/img/logo.png" id="header-image"></a>
   <div id="secondary-nav">
 <a href="` +
 	relativePath +

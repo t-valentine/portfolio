@@ -91,7 +91,7 @@
 	display: none;
 }
 
-@media (max-width: 901px) {
+@media (max-width: 1001px) {
 	.illustrations-container {
 		columns: 3 auto;
 	}
