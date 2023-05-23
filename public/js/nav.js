@@ -20,9 +20,6 @@ document.querySelector("#mainNav").innerHTML =
 	`/comics.html" class="nav-links">Comics</a></li>
 <a href="` +
 	relativePath +
-	`/projects.html" class="nav-links">Other Projects</a></li>
-<a href="` +
-	relativePath +
 	`/about.html" class="nav-links">About</a>
 </div>
 `;
