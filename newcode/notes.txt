@@ -1,0 +1,21 @@
+homepage
+hit-counter
+news
+currently...
+(plus link to archive of 'spotlights'
+> link to sign my guestbook! - https://www.123guestbook.com/
+----- 
+sidebar has dropdown links to:
+illustrations
+projects
+> comics
+> code
+blogging
+blogging page is my blog, with links to tagged posts at the top (go through zonelets)
+> oc talk
+> recommendations
+> about
+guestbook
+social media links 
+----- 
+footer has 'made in neocities'
