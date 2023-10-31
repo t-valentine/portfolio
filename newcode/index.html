@@ -7,48 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="indexstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
   <body>
-    <!--BEGINNING OF NAVBAR-->
-    <div id="navbar">
-      <h1 style="text-align: center;">h0neymice</h1>
-      <div class="navbar-links">
-        <a href="#" class="navlink">illustrations</a>
-        <div>
-          <button class="dropbtn navlink">projects
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">comics</a>
-            <a href="#">code</a>
+    <div class="main-content">
+      <div class="header">
+        <p style="text-align: center;">h0neymice</p>
+        <div class="navbar">
+          <a href="#" class="navlink">illustrations</a>
+          <div>
+            <button class="dropbtn navlink">projects
+              <i class="fa fa-caret-down" style="display: inline; border: none"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">comics</a>
+              <a href="#">code</a>
+            </div>
           </div>
-        </div>
-        <div>
-          <button class="dropbtn navlink">blogging
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">blog</a>
-            <a href="#">oc talk</a>
-            <a href="#">recommendations</a>
+          <div>
+            <button class="dropbtn navlink" >blogging
+              <i class="fa fa-caret-down" style="display: inline; border: none"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">blog</a>
+              <a href="#">oc talk</a>
+              <a href="#">recommendations</a>
+            </div>
           </div>
+          <a href="#" class="navlink">about</a>
         </div>
-        <a href="#" class="navlink">about</a>
       </div>
-    </div>
+        
+    <!--BEGINNING OF NAVBAR-->
+
     <!-- END OF NAVBAR-->
 
     <!-- Main Content Starts Here-->
-    <div class="main-content">
       <div class="columns">
-        <div>
+        <div id="left">
           <div>
             <p>You are visitor # <span id="hitcount"></span></p>
           </div>
           <h3>News</h3>
+          <div id="recentpostlistdiv"></div>
         </div>
-        <div>
+        <div id="right">
           <h3>Spotlight</h3>
           <ul>
             <li><strong>Reading...</strong><br>'When the Angels Left the Old Country' by Sacha Lamb<br>'Tomatoland' by Barry Estabrook</li>
@@ -64,19 +65,19 @@
           </ul>
         </div>
       </div>
-      <p>Sign my guestbook! (as many times as you like!)</p>
+      <p style="text-align: center;">Sign my guestbook! (as many times as you like!)</p>
     </div>
-    <!--Main Content Ends Here-->
-
-    <!--BEGINNING OF FOOTER-->
-    <div id="footer">
-      <div>
-        <p>Last updated on <span id="lastupdate"></span></p>
-        <p>Powered by <a href="https://neocities.org/" target="_blank">Neocities</a></p>
-      </div>
-    </div>
-    <!--END OF FOOTER-->
+            <!--BEGINNING OF FOOTER-->
+            <div id="footer">
+              <div>
+                <p>Last updated on <span id="lastupdate"></span></p>
+                <p>Powered by <a href="https://neocities.org/" target="_blank">Neocities</a></p>
+              </div>
+            </div>
+            <!--END OF FOOTER-->
     <script src="navbar.js" async defer></script>
     <script src="hitcounter.js" async defer></script>
+    <script src="./blog/blogscript.js" async defer></script>
+    <script src="https://kit.fontawesome.com/24318376ac.js" crossorigin="anonymous"></script>
   </body>
 </html>
