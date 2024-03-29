@@ -1,0 +1,40 @@
+.home-section {
+  min-height: 75vh;
+  padding: 60px 10% 60px 10%;
+}
+
+.home-section:nth-child(even) {
+  background-color: #dedeff;
+}
+
+.home-section:first-child {
+  padding-top: 0;
+}
+
+.home {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.home a {
+  text-decoration: none;
+}
+
+.home-navbuttons {
+  border: 2px solid blue;
+  background-color: white;
+  border-radius: 15px;
+  color: blue;
+  cursor: pointer;
+  display: block;
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.home-navbuttons:hover {
+  background-color: blue;
+  color: white;
+}

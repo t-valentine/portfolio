@@ -1,0 +1,33 @@
+nav {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 75px;
+}
+
+#title {
+  background-color: yellow;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.navlinks {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 550px) {
+  .links {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+#selectedImage {
+  text-align: center;
+}
+
+#selectedImage img {
+  display: block;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 50vw;
+}
+
+.thumbnails {
+  background-color: red;
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.thumbnails button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.thumbnail-image {
+  width: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  #selectedImage img {
+    max-width: 100%;
+  }
+}
