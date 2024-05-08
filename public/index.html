@@ -6,31 +6,53 @@
     <title>h0neymice</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/indexstyle.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="content">
-      <h1>h0neymice</h1>
-      <p>hi! i'm Val</p>
-      <p>part time artist, full time fool</p>
-      <div class="socials">
-        <a href="" aria-label="bluesky link"
-          ><img src="./assets/bskylogo.png" alt="blue sky logo"
-        /></a>
-        <a href="" aria-label="cohost link"
-          ><img src="./assets/cohostlogo.png" alt="cohost logo"
-        /></a>
-        <a href="" aria-label="tumblr link"
-          ><img src="./assets/tumblrlogo.png" alt="tumblr logo"
-        /></a>
-      </div>
-      <a
-        href="home.html"
-        id="continue-button"
-        aria-label="button to go to main site"
-      >
-        Continue on to website</a
-      >
+    <div class="wrapper">
+      <header id="header"></header>
+      <main>
+        <p>
+          welcome to my website! if you're here for the art, you can find it on
+          the sidebar!
+        </p>
+        <hr />
+        <h2>Fanlistings</h2>
+        <div style="display: flex; flex-wrap: wrap">
+          <a
+            href="https://fan.hopeslair.haliya.net/fl/kirby/index.php"
+            target="_blank"
+          >
+            <img
+              src="https://fan.hopeslair.haliya.net/fl/kirby/media/codes/50x50/kirby50x50_3.png"
+              alt="kirby"
+            />
+          </a>
+        </div>
+      </main>
+      <aside>
+        <div class="sticky">
+          <div class="navigation" id="navbar"></div>
+          <div class="callout">
+            <h3>Changelog</h3>
+            <p><strong>XX-XX-2024</strong></p>
+            <hr />
+            <p><strong>03-03-2024</strong></p>
+            <p>Published the new site! Everything is brand new!</p>
+          </div>
+          <div class="buttons">
+            <img src="./assets/buttons/affection.gif" />
+            <img src="./assets/buttons/fckgoogle.gif" />
+            <img src="./assets/buttons/hamsterbuddies.gif" />
+            <img src="./assets/buttons/linux_mint.gif" />
+            <img src="./assets/buttons/neocities-pink.gif" />
+            <img src="./assets/buttons/valid-any.gif" />
+          </div>
+        </div>
+      </aside>
+      <footer id="footer"></footer>
     </div>
+    <script src="./scripts/nav_footer.js" async defer></script>
   </body>
 </html>

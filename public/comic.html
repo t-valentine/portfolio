@@ -6,123 +6,85 @@
     <title>h0neymice</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="header">
-      <img src="./assets/KDL3_Nago_and_Kirby_artwork_2.png" alt="kirby" />
-    </div>
-    <div id="navbar" class="grid-section"></div>
-    <div id="left" class="grid-section">
-      <h2 style="font-size: 1.25em">Webcomics I Read</h2>
-
-
-      <a href="http://www.fairmeadowcomic.com/" target="_blank"
-      ><img
-        src="http://www.fairmeadowcomic.com/templates/2022/images/logo-gradient.png"
-        alt="fairmeadow"
-        width="200"
-        height="40"
-    /></a>
-
-    <a href="https://heirsoftheveil.com/" target="_blank"
-    ><img
-      src="https://heirsoftheveil.com/wp-content/uploads/2019/09/cropped-banner5_2-1-2.png"
-      alt="heir of the veils"
-      width="200"
-      height="40"
-  /></a>
-
-  <a href="https://kingsofsorts.com/" target="_blank"
-  ><img
-    src="https://kingsofsorts.com/wp-content/uploads/2022/09/koshana200x40_new-1.png"
-    alt="kings of sorts"
-    width="200"
-    height="40"
-/></a>
-
-    <a href="https://www.phantomarine.com/" target="_blank"
-    ><img
-      src="https://www.phantomarine.com/images/logo.png"
-      alt="phantomarine"
-      width="200"
-      height="40"
-  /></a>
-
-
-    </div>
-    <div id="main" class="grid-section comics-page">
-      <div class="comic-card">
-        <img src="./assets/comics/wyrm.JPG" alt="lindwym comic thumbnail" />
-        <div>
-          <a href="./comics/lindwyrm/index.html"><h2>The Lindwyrm</h2></a>
-          <a href="./comics/lindwyrm/index.html" class="read-button"
-            >Read here!</a
-          >
-          <p>Published 08-21-2022</p>
-          <p>
-            A 4 page comic completed for Hivework's MicroComics Summer event.
-            This comic is a re-telling of the lindworm fairy tale.
-          </p>
-        </div>
-      </div>
-      <div class="comic-card">
-        <img
-          src="./assets/comics/hith.png"
-          alt="heavy is the head comic thumbnail"
-        />
-        <div>
-          <a href="./comics/hitd/index.html"><h2>Heavy is the Head</h2></a>
-          <a href="./comics/hitd/index.html" class="read-button">Read here!</a>
-          <p>Published 01-16-2021</p>
-          <p>
-            A 4 page comic completed for Hivework's MicroComics Summer event.
-            This comic is a re-telling of the lindworm fairy tale.
-          </p>
-        </div>
-      </div>
-      <!--
-      <div class="small-cards">
-        <div class="comic-card small">
-          <img
-            src="./assets/comics/hith.png"
-            alt="heavy is the head comic thumbnail"
-          />
-          <div>
-            <a href="./comics/hitd/index.html"><h2>Coming Out</h2></a>
-            <a href="./comics/hitd/index.html" class="read-button"
-              >Read here!</a
-            >
-            <p>Published 01-16-2021</p>
-            <p>
-              A 4 page comic completed for Hivework's MicroComics Summer event.
-              This comic is a re-telling of the lindworm fairy tale.
-            </p>
+    <div class="wrapper">
+      <header id="header"></header>
+      <main>
+        <div class="small-cards">
+          <div class="comic-card small">
+            <img
+              src="./assets/comics/hith.png"
+              alt="heavy is the head comic thumbnail"
+            />
+            <div>
+              <a href="./comics/hitd/index.html"><h2>Coming Out</h2></a>
+              <a href="./comics/hitd/index.html" class="read-button"
+                >Read here!</a
+              >
+              <p>Published 01-16-2021</p>
+              <p>
+                A 4 page comic completed for Hivework's MicroComics Summer
+                event. This comic is a re-telling of the lindworm fairy tale.
+              </p>
+            </div>
+          </div>
+          <div class="comic-card small">
+            <img
+              src="./assets/comics/autobio.png"
+              alt="heavy is the head comic thumbnail"
+            />
+            <div>
+              <a href="./comics/hitd/index.html"><h2>Neurodivergency</h2></a>
+              <a href="./comics/hitd/index.html" class="read-button"
+                >Read here!</a
+              >
+              <p>Published 01-16-2021</p>
+              <p>
+                A 4 page comic completed for Hivework's MicroComics Summer
+                event. This comic is a re-telling of the lindworm fairy tale.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="comic-card small">
-          <img
-            src="./assets/comics/autobio.png"
-            alt="heavy is the head comic thumbnail"
-          />
-          <div>
-            <a href="./comics/hitd/index.html"><h2>Neurodivergency</h2></a>
-            <a href="./comics/hitd/index.html" class="read-button"
-              >Read here!</a
-            >
-            <p>Published 01-16-2021</p>
-            <p>
-              A 4 page comic completed for Hivework's MicroComics Summer event.
-              This comic is a re-telling of the lindworm fairy tale.
-            </p>
+      </main>
+      <aside>
+        <div class="sticky">
+          <div class="navigation" id="navbar"></div>
+          <div class="callout">
+            <h2 style="text-align: center">Comics I Read</h2>
+            <div class="comics-i-read">
+              <a href="http://www.fairmeadowcomic.com/" target="_blank"
+                ><img
+                  src="http://www.fairmeadowcomic.com/templates/2022/images/logo-gradient.png"
+                  alt="fairmeadow"
+              /></a>
+
+              <a href="https://heirsoftheveil.com/" target="_blank"
+                ><img
+                  src="https://heirsoftheveil.com/wp-content/uploads/2019/09/cropped-banner5_2-1-2.png"
+                  alt="heir of the veils"
+              /></a>
+
+              <a href="https://kingsofsorts.com/" target="_blank"
+                ><img
+                  src="https://kingsofsorts.com/wp-content/uploads/2022/09/koshana200x40_new-1.png"
+                  alt="kings of sorts"
+              /></a>
+
+              <a href="https://www.phantomarine.com/" target="_blank"
+                ><img
+                  src="https://www.phantomarine.com/images/logo.png"
+                  alt="phantomarine"
+              /></a>
+            </div>
           </div>
         </div>
-        -->
-      </div>
+      </aside>
+      <footer id="footer"></footer>
     </div>
-
-    <div id="footer"></div>
     <script src="./scripts/nav_footer.js" async defer></script>
   </body>
 </html>
