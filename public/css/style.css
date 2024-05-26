@@ -93,21 +93,28 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2%;
+  gap: 15px;
 }
 
 .comic-card {
-  border: 1px solid #3b2f2d;
+  border: 1px solid #f89a66;
   border-radius: 15px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 45%;
   min-width: 300px;
+  padding: 10px;
+}
+
+.comic-card h2,
+.comic-card p:first-of-type {
+  text-align: center;
 }
 
 .comic-card img {
   border-radius: 15px;
-  margin: 10px;
+  text-align: center;
   width: 100px;
 }
 
@@ -115,6 +122,11 @@ footer {
   border-radius: 10px;
   background-color: #fcaf2d;
   padding: 10px;
+  display: inline;
+}
+
+.comic-card div p:first-of-type {
+  display: inline;
 }
 
 .read-button:hover {
@@ -134,13 +146,18 @@ footer {
 
 @media only screen and (max-width: 800px) {
   aside,
-  main {
+  main,
+  footer {
     width: 100%;
   }
 
   main {
     margin-bottom: 10px;
     order: 2;
+  }
+
+  .wrapper {
+    margin: 0;
   }
   aside {
     order: 3;
@@ -151,6 +168,6 @@ footer {
   }
 
   header img {
-    max-height: 75px;
+    display: none;
   }
 }

@@ -10,50 +10,29 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div id="header">
-      <img src="./assets/KDL3_Nago_and_Kirby_artwork_2.png" alt="kirby" />
+    <div class="wrapper">
+      <header id="header"></header>
+      <main>
+        <h2>About Me</h2>
+        <img src="./assets/porygon.png" style="width: 50vw" />
+        <p>
+          My name is Val, I'm an artist who likes experimenting with new mediums
+          and drawing comics. I work as a software developer for my day job and
+          in my free time I garden, play ttrpgs, and read.
+        </p>
+        <h2>
+          If you wanna know more about me... check out my <a href="">blog!</a>
+        </h2>
+      </main>
+      <aside>
+        <div class="navigation" id="navbar"></div>
+        <h2>Socials</h2>
+        <a href="" target="_blank">BlueSky</a>
+        <a href="" target="_blank">Cohost</a>
+        <a href="" target="_blank">Tumblr</a>
+      </aside>
+      <footer id="footer"></footer>
     </div>
-    <div id="navbar" class="grid-section"></div>
-    <div id="left" class="grid-section">
-      <h2>Other Places You Can Find Me on the Web</h2>
-      <ul>
-        <li><a href="https://bsky.app/profile/h0neymice.bsky.social" target="_blank">BlueSky</a></li>
-        <li><a href="https://h0neymice.tumblr.com/" target="_blank">Tumblr</a></li>
-      </ul>
-    </div>
-    <div id="main" class="grid-section">
-      <h2>About Me</h2>
-      <div class="about-page">
-        <img src="./assets/porygon.png"/>
-        <table class="aboutme-table">
-          <tr>
-            <td>Name</td>
-            <td>Val</td>
-          </tr>
-          <tr>
-            <td>Pronouns</td>
-            <td>he/him & she/her</td>
-            </td>
-          </tr>
-          <tr><td>Age</td><td>25+</td></tr>
-          <tr><td>Likes</td><td>Gardening, TTRPGs, Going for Walks, Animals (of ALL kinds), Blind Boxes, Drawing</td></tr>
-          <tr><td>Dislike</td><td>RGB Lights on Technology, Tortellini, When Squirrels eat my vegatables</td></tr>
-        </table>
-      </div>
-      <div class="socials">
-        <a href="" aria-label="bluesky link"
-          ><img src="./assets/bskylogo.png" alt="blue sky logo"
-        /></a>
-        <a href="" aria-label="cohost link"
-          ><img src="./assets/cohostlogo.png" alt="cohost logo"
-        /></a>
-        <a href="" aria-label="tumblr link"
-          ><img src="./assets/tumblrlogo.png" alt="tumblr logo"
-        /></a>
-      </div>
-    </div>
-
-    <div id="footer"></div>
     <script src="./scripts/nav_footer.js" async defer></script>
   </body>
 </html>

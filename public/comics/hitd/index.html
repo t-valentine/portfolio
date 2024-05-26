@@ -6,31 +6,33 @@
     <title>h0neymice</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="../../assets/favicon.png" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/comicstyle.css" />
   </head>
   <body>
-    <div id="header"><h1>Heavy is the Head</h1></div>
-    <div id="navbar" class="grid-section">
-      <div class="comic-footer">
-        <br />
-        <p style="color: black; margin: 0">Powered by</p>
-        <a href="https://rarebit.neocities.org" target="_blank"
-          ><img src="../../assets/rarebitlogo_small.png" height="30"
-        /></a>
-      </div>
+    <div class="wrapper">
+      <header id="header"></header>
+      <main>
+        <div id="showComic">
+          <div class="writeNav"></div>
+          <div class="writePageClickable" id="page"></div>
+          <div class="writeNav"></div>
+        </div>
+      </main>
+      <aside>
+        <div class="sticky">
+          <div class="navigation" id="navbar"></div>
+          <p style="color: black; margin: 0">Powered by</p>
+          <a href="https://rarebit.neocities.org" target="_blank"
+            ><img src="../../assets/rarebitlogo_small.png" height="30"
+          /></a>
+        </div>
+      </aside>
+      <footer id="footer"></footer>
     </div>
-
-    <div id="main" class="grid-section">
-      <div id="showComic">
-        <div class="writeNav"></div>
-        <div class="writePageClickable" id="page"></div>
-        <div class="writeNav"></div>
-      </div>
-    </div>
-
     <script src="js/comic_settings.js" defer></script>
     <script src="../comic_show.js" defer></script>
-    <script src="../../scripts/nav_footer.js" defer></script>
+    <script src="../../scripts/nav_footer.js" async defer></script>
   </body>
 </html>
