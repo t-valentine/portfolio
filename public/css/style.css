@@ -70,6 +70,15 @@ footer {
   top: 10px;
 }
 
+a {
+  color: #613111;
+}
+
+a:hover {
+  background-color: #fcaf2d;
+  cursor: pointer;
+}
+
 .callout {
   background-color: #a5d8c5;
   border-radius: 10px;
@@ -144,6 +153,50 @@ footer {
   max-width: 150px;
 }
 
+.grid-section {
+  background-image: url("./assets/10.jpg");
+  background-blend-mode: lighten;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-color: #f1ede4;
+  border-radius: 15px;
+  padding: 10px 0;
+  border: 2px solid #f89a66;
+  height: 120px;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 15px;
+}
+
+.grid-item {
+  border: transparent;
+  border-radius: 10px;
+  transition: 0.25s;
+  filter: contrast(90%);
+  height: 100px;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  filter: contrast(100%);
+  transform: scale(1.025);
+}
+
+#callout-illu-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 51vh;
+  margin: 15px;
+}
+
+#callout-illu {
+  border: 1px solid #525252;
+  max-height: 50vh;
+  max-width: 60vw;
+}
+
 @media only screen and (max-width: 800px) {
   aside,
   main,
@@ -169,5 +222,9 @@ footer {
 
   header img {
     display: none;
+  }
+
+  #callout-illu {
+    max-width: 90vw;
   }
 }
