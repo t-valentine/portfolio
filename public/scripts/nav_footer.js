@@ -28,5 +28,5 @@ document.querySelector("#navbar").innerHTML =
   document.querySelector("#navbar").innerHTML;
 
 document.querySelector("#footer").innerHTML = `
-<p>T. Valentine &#169; 2024</p>
+<div><p id="footertext">T. Valentine &#169; 2024</p></div>
 `;

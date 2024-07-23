@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url("../assets/bg.jpg");
-  background-size: auto;
+  background-image: url("../assets/bg1.jpg");
+  background-size: 30%;
   background-repeat: repeat;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-  background-color: #f26a3a;
+  background-color: #9fc997;
   border-radius: 15px;
   color: #f1ede4;
   padding: 20px;
@@ -42,10 +42,10 @@ header img {
 aside,
 main {
   padding: 10px 20px;
-  background-color: #f1ede4;
+  background-color: #fdf0e6;
   border-radius: 15px;
   padding: 10px 20px;
-  border: 2px solid #f89a66;
+  border: 2px solid #f8ddca;
 }
 
 aside {
@@ -71,16 +71,17 @@ footer {
 }
 
 a {
-  color: #613111;
+  color: #52744b;
 }
 
 a:hover {
-  background-color: #fcaf2d;
+  color: black;
+  background-color: #9fc997;
   cursor: pointer;
 }
 
 .callout {
-  background-color: #a5d8c5;
+  background-color: #f6a9cb;
   border-radius: 10px;
   padding: 5px 10px;
   font-size: small;
@@ -106,7 +107,7 @@ a:hover {
 }
 
 .comic-card {
-  border: 1px solid #f89a66;
+  border: 1px solid #9a9ccd;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -129,7 +130,8 @@ a:hover {
 
 .read-button {
   border-radius: 10px;
-  background-color: #fcaf2d;
+  background-color: #f6a9cb;
+  color: black;
   padding: 10px;
   display: inline;
 }
@@ -139,7 +141,8 @@ a:hover {
 }
 
 .read-button:hover {
-  background-color: #f89a66;
+  color: white;
+  background-color: #9a9ccd;
 }
 
 .comics-i-read {
