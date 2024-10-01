@@ -1,0 +1,25 @@
+.writeNav {
+  margin: 10px 0;
+}
+
+.comicNav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.comicNav img {
+  width: 50px;
+}
+
+.writePageClickable img {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .writePageClickable img {
+    max-width: 90vw;
+  }
+}

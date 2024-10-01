@@ -4,42 +4,48 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>h0neymice</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Art portfolio of T. Valentine AKA h0neymice"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header id="header"></header>
-      <main>
-        <h1>Site Map</h1>
-        <ul>
-          <li><a href="index.html">Landing Page</a></li>
-          <li><a href="home.html">Home</a></li>
-          <li>Art</li>
+    <div id="container">
+      <div id="headerArea"></div>
+
+      <div id="flex">
+        <main>
+          <h1>Site Map</h1>
           <ul>
-            <li><a href="illustration.html">Illustration</a></li>
-            <li><a href="comic.html">Comics</a></li>
+            <li>Art</li>
             <ul>
-              <li><a href="./comics/lindwyrm/index.html">The Lindwyrm</a></li>
-              <li><a href="./comics/hitd/index.html">Heavy is the Head</a></li>
+              <li>
+                <a href="index.html">Illustrations (still the home page)</a>
+              </li>
+              <li><a href="comic.html">Comics</a> (in alphabetical order)</li>
+              <ul>
+                <li><a href="">Cursed Relics</a></li>
+                <li>
+                  <a href="./comics/hitd/index.html">Heavy is the Head</a>
+                </li>
+                <li><a href="./comics/lindwyrm/index.html">The Lindwyrm</a></li>
+              </ul>
+            </ul>
+            <li><a href="aboutme.html">About</a></li>
+            <li>Miscellaneous</li>
+            <ul>
+              <li><a href="webhelp.html">Resources (for website making)</a></li>
+              <li><a href="feed.xml">RSS Feed</a></li>
             </ul>
           </ul>
-          <li><a href="aboutme.html">About</a></li>
-          <li>Miscellaneous</li>
-          <ul>
-            <li><a href="webhelp.html">Resources (for website making)</a></li>
-          </ul>
-        </ul>
-      </main>
-      <aside>
-        <div class="sticky">
-          <div class="navigation" id="navbar"></div>
-        </div>
-      </aside>
-      <footer id="footer"></footer>
+        </main>
+      </div>
+      <footer id="footer" style="margin-top: 0px"></footer>
     </div>
+
     <script src="./scripts/nav_footer.js" async defer></script>
   </body>
 </html>

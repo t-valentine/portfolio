@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>h0neymice Art</title>
+  <description>{A short description of your blog}</description>
+  <link>Art portfolio of T. Valentine AKA h0neymice</link>
+  <lastBuildDate>
+    Sat, 28 Sep 2024 21:05:24 +0000
+  </lastBuildDate>
+
+  <item>
+    <title>Cursed Relics Week 1: Longsword</title>
+    <description>
+      Added 4 comic pages for Week 1 of Cursed Relics
+    </description>
+    <link>https://h0neymice.neocities.org/comics/cursedrelics/</link>
+    <pubDate>
+      Sat, 28 Sep 2024 21:05:24 +0000
+    </pubDate>
+  </item>
+  <item>
+    <title>First RSS update</title>
+    <description>
+      Adding RSS to the portfolio
+    </description>
+    <link>https://h0neymice.neocities.org/</link>
+    <pubDate>
+      Sat, 28 Sep 2024 21:05:24 +0000
+    </pubDate>
+  </item>
+
+
+</channel>
+</rss>

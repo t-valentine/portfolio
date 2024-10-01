@@ -4,32 +4,42 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>h0neymice</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Art portfolio of T. Valentine AKA h0neymice"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/comicstyle.css" />
+    <link rel="icon" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../comicstyle.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header id="header"></header>
-      <main>
-        <div id="showComic">
-          <div class="writeNav"></div>
-          <div class="writePageClickable" id="page"></div>
-          <div class="writeNav"></div>
-        </div>
-      </main>
-      <aside>
-        <div class="sticky">
-          <div class="navigation" id="navbar"></div>
-          <p style="color: black; margin: 0">Powered by</p>
-          <a href="https://rarebit.neocities.org" target="_blank"
-            ><img src="../../assets/rarebitlogo_small.png" height="30"
-          /></a>
-        </div>
-      </aside>
-      <footer id="footer"></footer>
+    <div id="container">
+      <div id="headerArea"></div>
+
+      <div id="flex">
+        <main>
+          <div id="showComic">
+            <div class="writeNav"></div>
+            <div class="writePageClickable" id="page"></div>
+            <div class="writeNav"></div>
+          </div>
+          <div
+            style="
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              gap: 10px;
+            "
+          >
+            <p style="color: black">Powered by</p>
+            <a href="https://rarebit.neocities.org" target="_blank"
+              ><img src="../../assets/rarebitlogo_small.png" height="30"
+            /></a>
+          </div>
+        </main>
+      </div>
+      <footer id="footer" style="margin-top: 0px"></footer>
     </div>
     <script src="js/comic_settings.js" defer></script>
     <script src="../comic_show.js" defer></script>

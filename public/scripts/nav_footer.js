@@ -4,29 +4,31 @@ if (currentURL.includes("comics/")) {
   relativePath = "../..";
 }
 
-document.querySelector("#header").innerHTML = `        <h1>h0neymice</h1>
-<img src="./assets/KDL3_Nago_and_Kirby_artwork_2.png" />`;
-
-document.querySelector("#navbar").innerHTML =
-  `
-  <h2>Content</h2>
+document.querySelector("#headerArea").innerHTML =
+  `        
+<div id="header" style="height: 178px"></div>
+<nav id="navbar" style="margin-bottom: 0px">
 <ul>
-  <li><a href="` +
+<li><a href="` +
   relativePath +
-  `/index.html">Home</a></li>
-  <li><a href="` +
+  `/index.html">Home (Illustrations)</a></li>
+
+<li><a href="` +
   relativePath +
-  `/comic.html">Comics</a></li>
-  <li><a href="` +
+  `/comichome.html">Comics</a></li>
+
+            <li><a href="` +
   relativePath +
-  `/aboutme.html">About Me</a></li>
-  <li><a href="` +
+  `/webhelp.html">Website Help</a></li>
+
+            <li><a href="` +
+  relativePath +
+  `/about.html">About Me</a></li>
+
+            <li><a href="` +
   relativePath +
   `/sitemap.html">Site Map</a></li>
-</ul>
-` +
-  document.querySelector("#navbar").innerHTML;
+          </ul>
+        </nav>`;
 
-document.querySelector("#footer").innerHTML = `
-<p>T. Valentine &#169; 2024</p>
-`;
+document.querySelector("#footer").innerHTML = `T. Valentine &#169; 2024`;
