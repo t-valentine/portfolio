@@ -5,9 +5,20 @@
   <description>{A short description of your blog}</description>
   <link>Art portfolio of T. Valentine AKA h0neymice</link>
   <lastBuildDate>
-    Fri, 04 Oct 2024 13:49:08 +0000
+    Wed, 16 Oct 2024 04:20:48 +0000
   </lastBuildDate>
+  <ttl>100</ttl>
     <item>
+    <title>Cursed Relics Week 2: Mask</title>
+    <description>
+      Added a 3 page comic for Week 2 of Cursed Relics
+    </description>
+    <link>file:///home/tobi/Documents/Code/Projects/portfolio/public/comics/cursedrelics/index.html?pg=9#showComic</link>
+    <pubDate>
+     Wed, 16 Oct 2024 04:20:48 +0000
+    </pubDate>
+  </item>
+  <item>
     <title>Cursed Relics Week 2: Goblet</title>
     <description>
       Added an illustration for Week 2 of Cursed Relics
