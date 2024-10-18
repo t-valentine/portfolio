@@ -5,13 +5,13 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 11; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 12; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
 const folder = "../../assets/comics/cursedrelics"; //directory of the folder where you keep all the comics
 const image = ""; //what you'll name all your comic pages
-const ext = "png"; //file extension of your comic pages
+const ext = "webp"; //file extension of your comic pages
 
 //THUMBNAIL SETTINGS
 const thumbFolder = "assets/thumbs"; //directory of the folder where you keep all the thumbnail images for the comics, in case you want the archive page to use thumbnails.
