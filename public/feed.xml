@@ -8,17 +8,24 @@
         <language>en-us</language>
     </channel> 
       <item>
-        <title>Cursed Relics: Week 3</title>
-        <pubDate>Wed, 09 Oct 2024 17:42:08 +0000</pubDate>
+        <title>Testing RSS Feed</title>
+        <pubDate>Tue, 29 Oct 2024 04:26:54 GMT</pubDate>
         <link>https://h0neymice.neocities.org/comics/cursedrelics/</link>
-        <guid>https://h0neymice.neocities.org/comics/cursedrelics/</guid>
+        <guid>https://h0neymice.neocities.org/comics/cursedrelics/?pg=9#showComic</guid>
+        <description>The prompt: ouroboros</description>
+      </item>
+      <item>
+        <title>Cursed Relics: Week 3</title>
+        <pubDate>Fri, 18 Oct 2024 20:46:28 +0000</pubDate>
+        <link>https://h0neymice.neocities.org/comics/cursedrelics/</link>
+        <guid>https://h0neymice.neocities.org/comics/cursedrelics/?pg=9#showComic</guid>
         <description>The prompt: ouroboros</description>
       </item>
       <item>
         <title>Cursed Relics: Week 2</title>
         <pubDate>Wed, 09 Oct 2024 17:42:08 +0000</pubDate>
         <link>https://h0neymice.neocities.org/comics/cursedrelics/</link>
-        <guid>https://h0neymice.neocities.org/comics/cursedrelics/</guid>
+        <guid>https://h0neymice.neocities.org/comics/cursedrelics/?pg=7#showComic</guid>
         <description>A description of the page.</description>
       </item>
 </rss>
