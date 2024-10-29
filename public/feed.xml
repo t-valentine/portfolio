@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <atom:link href="https://h0neymice.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
-        <title>h0neymice</title>
-        <link>https://h0neymice.neocities.org/</link>
-        <description>Illustrations and comics from Val h0neymice</description>
-        <language>en-us</language>
-    </channel> 
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Your RSS Feed Title</title>
+  <description>This is the description of your RSS feed</description>
+  <link>https://rssguide.neocities.org</link>
+  <lastBuildDate>
+    Tue, 29 Oct 2024 04:26:54 GMT
+  </lastBuildDate>
+  <ttl>20000</ttl>
+</channel>
       <item>
         <title>Testing RSS Feed</title>
         <pubDate>Tue, 29 Oct 2024 04:26:54 GMT</pubDate>
