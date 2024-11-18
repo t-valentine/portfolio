@@ -13,3 +13,20 @@
 </channel>
 
 </rss> 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>h0neymice art</title>
+	<id>https://h0neymice.neocities.org/</id>
+	<link rel="alternate" href="https://h0neymice.neocities.org/"/>
+	<link rel="self" href="https://h0neymice.neocities.org/rss.xml"/>
+	<updated>{{LAST_UPDATE_TIME in RFC3339 format}}</updated>
+	<author>
+		<name>{{AUTHOR_NAME}}</name>
+	</author>
+	<entry>
+		<title>rss</title>
+		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/"/>
+		<published>	2024-11-18T19:52:28+00:00</published>
+	</entry>
+</feed>
