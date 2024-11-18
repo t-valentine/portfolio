@@ -1,32 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-
-<channel>
-  <title>h0neymice art</title>
-  <link>https://h0neymice.neocities.org/link>
-  <description>t. valentine's art portfolio</description>
-  <item>
-    <title>RSS 1</title>
-    <link>https://h0neymice.neocities.org/comics/cursedrelics/</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-</channel>
-
-</rss> 
-
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>h0neymice art</title>
-	<id>https://h0neymice.neocities.org/</id>
-	<link rel="alternate" href="https://h0neymice.neocities.org/"/>
+	<id>https://h0neymice.neocities.org</id>
+	<link rel="alternate" href="https://h0neymice.neocities.org"/>
 	<link rel="self" href="https://h0neymice.neocities.org/rss.xml"/>
-	<updated>{{LAST_UPDATE_TIME in RFC3339 format}}</updated>
+	<updated>2024-11-18T19:52:28+00:00</updated>
 	<author>
-		<name>{{AUTHOR_NAME}}</name>
+		<name>T Valentine</name>
 	</author>
 	<entry>
-		<title>rss</title>
+		<title>RSS</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/"/>
-		<published>	2024-11-18T19:52:28+00:00</published>
+		<published>2024-11-18T19:52:28+00:00</published>
+		<content type="html">an entry</content>
 	</entry>
 </feed>
