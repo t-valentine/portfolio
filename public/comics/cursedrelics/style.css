@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: OldCupboard;
+  src: url("../../assets/OldCupboard.otf") format("opentype");
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", Tahoma, sans-serif;
+  margin: 0;
+  background-color: #454547;
+  color: #dedede;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* the "container" is what wraps your entire website */
+#container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+  color: #e4c0a7;
+}
+
+#header {
+  height: 2em;
+}
+
+h1 {
+  font-family: OldCupboard, fantasy;
+  font-size: 3em;
+}
+
+/* navigation section */
+#navbar {
+  height: 40px;
+  background-color: #a4cc9a;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 10px;
+}
+
+#navbar li a {
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#flex {
+  display: flex;
+}
+
+/* main */
+main {
+  background-color: transparent;
+  color: #dedede;
+  flex: 1;
+  padding: 20px;
+  order: 2;
+  overflow: auto;
+}
+
+.comicNav img {
+  width: 50px;
+  filter: invert(90%);
+}
+
+/* footer */
+footer {
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}

@@ -4,10 +4,16 @@
 	<id>https://h0neymice.neocities.org</id>
 	<link rel="alternate" href="https://h0neymice.neocities.org"/>
 	<link rel="self" href="https://h0neymice.neocities.org/rss.xml"/>
-	<updated>2024-11-18T21:25:10+00:00</updated>
+	<updated>2024-11-30T21:25:10+00:00</updated>
 	<author>
 		<name>T Valentine</name>
 	</author>
+	<entry>
+		<title>Updated Cursed Relics page styling</title>
+		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
+		<published>2024-11-30T19:52:28+00:00</published>
+		<content type="html">an entry</content>
+	</entry>
     	<entry>
 		<title>Cursed Relics - Ouroboros</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>

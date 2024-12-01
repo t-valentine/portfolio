@@ -8,6 +8,10 @@
   justify-content: center;
 }
 
+.comicNav a {
+  height: 50px;
+}
+
 .comicNav img {
   width: 50px;
 }
