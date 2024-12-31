@@ -95,6 +95,18 @@ main {
   overflow: auto;
 }
 
+#corkboard {
+  border: 10px ridge #91533b;
+  background-image: url(./assets/bg_cork.jpg);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#corkboard > div {
+  padding: 5px;
+}
+
 /* footer */
 footer {
   background-color: #a4cc9a;
