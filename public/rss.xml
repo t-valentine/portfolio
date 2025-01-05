@@ -4,32 +4,32 @@
 	<id>https://h0neymice.neocities.org</id>
 	<link rel="alternate" href="https://h0neymice.neocities.org"/>
 	<link rel="self" href="https://h0neymice.neocities.org/rss.xml"/>
-	<updated>2024-11-30T21:25:10+00:00</updated>
+	<updated>2025-01-06T06:00:00+00:00</updated>
 	<author>
 		<name>T Valentine</name>
 	</author>
 		<entry>
 		<title>Cursed Relics Update</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<pubDate>Mon, 06 Jan 2025 00:00:00 CST</pubDate>
+		<published>2025-01-06T06:00:00+00:00</published>
 		<content type="html">Page 13!</content>
 	</entry>
 	<entry>
 		<title>Updated Cursed Relics page styling</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<pubDate>2024-11-30T19:52:28+00:00</pubDate>
+		<published>2024-11-30T19:52:28+00:00</published>
 		<content type="html">an entry</content>
 	</entry>
     	<entry>
 		<title>Cursed Relics - Ouroboros</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<pubDate>2024-11-18T21:25:10+00:00</pubDate>
+		<published>2024-11-18T21:25:10+00:00</published>
 		<content type="html">drawing</content>
 	</entry>
 	<entry>
 		<title>RSS</title>
 		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/"/>
-		<pubDate>2024-11-18T19:52:28+00:00</pubDate>
+		<published>2024-11-18T19:52:28+00:00</published>
 		<content type="html">an entry</content>
 	</entry>
 </feed>
