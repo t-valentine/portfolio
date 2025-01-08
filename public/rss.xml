@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-	<title>h0neymice art</title>
-	<id>https://h0neymice.neocities.org</id>
-	<link rel="alternate" href="https://h0neymice.neocities.org"/>
-	<link rel="self" href="https://h0neymice.neocities.org/rss.xml"/>
-	<updated>2025-01-06T06:00:00+00:00</updated>
-	<author>
-		<name>T Valentine</name>
-	</author>
-		<entry>
-		<title>Cursed Relics Update</title>
-		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<published>2025-01-06T06:00:00+00:00</published>
-		<content type="html">Page 13!</content>
-	</entry>
-	<entry>
-		<title>Updated Cursed Relics page styling</title>
-		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<published>2024-11-30T19:52:28+00:00</published>
-		<content type="html">an entry</content>
-	</entry>
-    	<entry>
-		<title>Cursed Relics - Ouroboros</title>
-		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/comics/cursedrelics/"/>
-		<published>2024-11-18T21:25:10+00:00</published>
-		<content type="html">drawing</content>
-	</entry>
-	<entry>
-		<title>RSS</title>
-		<link rel="alternate" type="text/html" href="https://h0neymice.neocities.org/"/>
-		<published>2024-11-18T19:52:28+00:00</published>
-		<content type="html">an entry</content>
-	</entry>
-</feed>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>h0neymice</title>
+        <description>
+            art portfolio for t. valentine
+        </description>
+        <link>https://h0neymice.neocities.org/rss.xml</link>
+        <atom:link
+            href="https://h0neymice.neocities.org/rss.xml"
+            rel="self"
+            type="application/rss+xml"
+        />
+        <ttl>240</ttl>
+        <webMaster>hialmberi95@yahoo.com</webMaster>
+        <lastBuildDate>
+            Wed, 08 Jan 2025 22:16:00 CST
+        </lastBuildDate>
+        <language>en-us</language>
+		<item>
+    <guid>https://h0neymice.neocities.org/comics/cursedrelics/?pg=14#showComic</guid>
+    <title>Cursed Relics - page 14</title>
+    <link>https://h0neymice.neocities.org/comics/cursedrelics/?pg=14#showComic</link>
+    <pubDate>
+        Wed, 08 Jan 2025 06:05:00 CST
+    </pubDate>
+</item>
+<item>
+    <guid>https://h0neymice.neocities.org</guid>
+    <title>Getting RSS Working</title>
+    <description>
+        Re-doing my RSS feed and making sure it's all working correctly
+    </description>
+    <link>https://h0neymice.neocities.org</link>
+    <pubDate>
+        Tue, 07 Jan 2025 22:16:00 CST
+    </pubDate>
+</item>
+<!--
+EXAMPLE FEED ITEM:
+<item>
+    <guid>https://www.yourwebsite.com/link-to-your-post.html</guid>
+    <title>Title of your post</title>
+    <description>
+        Description of your post
+    </description>
+    <link>https://www.yourwebsite.com/link-to-your-post.html</link>
+    <pubDate>
+        Time and date when the item was made in RFC2822 format
+    </pubDate>
+</item>
+-->
+
+    </channel>
+</rss>
