@@ -31,4 +31,4 @@ document.querySelector("#headerArea").innerHTML =
           </ul>
         </nav>`;
 
-document.querySelector("#footer").innerHTML = `T. Valentine &#169; 2024`;
+document.querySelector("#footer").innerHTML = `T. Valentine &#169; 2025`;
