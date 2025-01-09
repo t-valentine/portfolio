@@ -108,6 +108,10 @@ h1 {
   font-size: 25px;
 }
 
+.two-columns {
+  display: flex;
+  width: 100%;
+}
 /* this is just a cool box, it's the darker colored one */
 .box {
   background-color: #f6adcb;
@@ -133,7 +137,7 @@ h1 {
 /* Touching any CSS below this can break the gallery. Proceed with caution */
 .gallery {
   padding-top: 1em;
-  columns: auto 4;
+  columns: auto 3;
   text-align: center;
 }
 
@@ -228,6 +232,10 @@ h1 {
   aside {
     order: 2;
     width: 100%;
+  }
+
+  .gallery {
+    columns: auto 2;
   }
 
   /* the order of the items is adjusted here for responsiveness!
