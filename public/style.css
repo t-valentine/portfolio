@@ -95,18 +95,6 @@ main {
   overflow: auto;
 }
 
-#corkboard {
-  border: 10px ridge #91533b;
-  background-image: url(./assets/bg_cork.jpg);
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#corkboard > div {
-  padding: 5px;
-}
-
 /* footer */
 footer {
   background-color: #a4cc9a;
@@ -142,6 +130,19 @@ h1 {
 
 /* home illustrations styling */
 
+/* Touching any CSS below this can break the gallery. Proceed with caution */
+.gallery {
+  padding-top: 1em;
+  columns: auto 4;
+  text-align: center;
+}
+
+.gallery img {
+  border: 1px solid black; /* You can remove the border if you want */
+  width: 100%;
+}
+
+/*
 .grid-section {
   border-radius: 15px;
   padding: 10px 0;
@@ -179,6 +180,7 @@ h1 {
   max-height: 50vh;
   max-width: 100%;
 }
+  */
 
 /* comics home styling */
 .comics-list {

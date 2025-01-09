@@ -11,15 +11,14 @@ document.querySelector("#headerArea").innerHTML =
 <ul>
 <li><a href="` +
   relativePath +
-  `/index.html">Home (Illustrations)</a></li>
+  `/index.html">Home</a></li>
+  <li><a href="` +
+  relativePath +
+  `/illustrations.html">Illustrations</a></li>
 
 <li><a href="` +
   relativePath +
   `/comichome.html">Comics</a></li>
-
-            <li><a href="` +
-  relativePath +
-  `/webhelp.html">Website Help</a></li>
 
             <li><a href="` +
   relativePath +
