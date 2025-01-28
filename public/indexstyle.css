@@ -29,6 +29,36 @@ body {
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.gameboy-screen a:hover {
+  background-color: red;
+}
+
+#a-button {
+  text-align: right;
+  padding-right: 6%;
+  margin-top: -14%;
+}
+
+#b-button {
+  text-align: right;
+  padding-right: 15%;
+  margin-top: 0%;
+}
+
+#a-button a,
+#b-button a {
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid red;
+  /*color: transparent;*/
+}
+
+#a-button a:hover {
+  cursor: hand;
 }
 
 @media only screen and (max-width: 610px) {
@@ -39,5 +69,15 @@ body {
   }
   .gameboy-screen {
     margin-top: 20%;
+  }
+  #a-button {
+    text-align: right;
+    padding-right: 6%;
+    margin-top: 50%;
+  }
+  #b-button {
+    text-align: right;
+    padding-right: 26%;
+    margin-top: 1%;
   }
 }
