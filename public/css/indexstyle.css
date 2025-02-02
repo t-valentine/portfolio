@@ -8,42 +8,12 @@ body {
   background-size: 350px;
 }
 
-.buttons-div {
-  max-width: 500px;
-  width: 85%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.buttons-div a {
-  padding: 20px;
-  text-align: center;
-}
-
-.buttons-div a:first-child {
-  border: 1px solid red;
-  grid-area: 1 / 1 / 2 / 3;
-}
-
-.buttons-div a:nth-child(2) {
-  border: 1px solid orange;
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.buttons-div a:nth-child(3) {
-  border: 1px solid lime;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.buttons-div a:nth-child(4) {
-  border: 1px solid cyan;
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.buttons-div a:nth-child(5) {
-  border: 1px solid plum;
-  grid-area: 3 / 2 / 4 / 3;
+.cage {
+  background-image: url("../assets/hamstercage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 550px;
+  height: 400px;
 }
