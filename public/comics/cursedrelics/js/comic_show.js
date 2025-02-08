@@ -4,6 +4,17 @@ writePageClickable(".writePageClickable", true); //show the current page. to tog
 
 keyNav(); //enables navigation through the comic with the arrow keys and WSAD. It doesn't need a div with a class name, it automatically works. delete or comment out (add // at the beginning) here to disable.
 
+writeNotes("#notes");
+
+function writeNotes(div) {
+  if (pgData.length >= pg) {
+    return (document.querySelector(div).innerHTML = `
+    <h3 style="margin: 5px; text-align: center"> Page 
+    ${pgData[pg - 1].pgNum}</h3>
+    <p style="text-align:center">${pgData[pg - 1].notes}</p>`);
+  }
+}
+
 //SHOW COMIC PAGE, with clickable link
 function writePageClickable(div, clickable) {
   if (!clickable) {
@@ -52,9 +63,9 @@ function writePage() {
 
     altText = pgData[pg - 1].altText; //set alt text to the text defined in the array
 
-    if (pgData[pg - 1].imageFiles > 1) {
+    if (pgData[pg - 1].pgNum == 13) {
       //if theres more than one page segment
-      for (let i = 1; i < pgData[pg - 1].imageFiles + 1; i++) {
+      for (let i = 1; i < 3; i++) {
         //for loop to put all the parts of the image on the webpage
         partExtension = imgPart + i.toString();
         path =

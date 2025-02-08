@@ -5,12 +5,13 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 22; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 23; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
 const folder = "../../assets/comics/cursedrelics"; //directory of the folder where you keep all the comics
 const image = ""; //what you'll name all your comic pages
+const imgPart = "_"; //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
 const ext = "webp"; //file extension of your comic pages
 
 //THUMBNAIL SETTINGS
@@ -31,19 +32,118 @@ if (pg == 0) {
 const pgData = [
   {
     pgNum: 1, //what page number it is
-    altText: "", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
+    altText: "",
+    notes: "Week 1, Prompt 1: Longsword (page 1/4)",
   },
   {
     pgNum: 2,
     altText: "",
+    notes: "Week 1, Prompt 1: Longsword (page 2/4)",
   },
   {
     pgNum: 3,
     altText: "",
+    notes: "Week 1, Prompt 1: Longsword (page 3/4)",
   },
   {
     pgNum: 4,
     altText: "",
+    notes: "Week 1, Prompt 1: Longsword (page 4/4)",
+  },
+  {
+    pgNum: 5,
+    altText: "",
+    notes: "Week 1, Prompt 2: Chimera",
+  },
+  {
+    pgNum: 6,
+    altText: "",
+    notes: "Week 1, Prompt 3: Wings",
+  },
+  {
+    pgNum: 7,
+    altText: "",
+    notes: "Week 2, Prompt 1: Crown",
+  },
+  {
+    pgNum: 8,
+    altText: "",
+    notes: "Week 2, Prompt 2: Goblet",
+  },
+  {
+    pgNum: 9,
+    altText: "",
+    notes: "Week 2, Prompt 3: Mask (page 1/3)",
+  },
+  {
+    pgNum: 10,
+    altText: "",
+    notes: "Week 2, Prompt 3: Mask (page 1/3)",
+  },
+  {
+    pgNum: 11,
+    altText: "",
+    notes: "Week 2, Prompt 3: Mask (page 2/3)",
+  },
+  {
+    pgNum: 12,
+    altText: "",
+    notes: "Week 3, Prompt 1: Ouroboros",
+  },
+  {
+    pgNum: 13,
+    altText: "",
+    notes: "No longer following the prompts as closely. Published on 1/6",
+  },
+  {
+    pgNum: 14,
+    altText: "",
+    notes: "Published on 1/8",
+  },
+  {
+    pgNum: 15,
+    altText: "",
+    notes: "Published on 1/13",
+  },
+  {
+    pgNum: 16,
+    altText: "",
+    notes: "Published on 1/15",
+  },
+  {
+    pgNum: 17,
+    altText: "",
+    notes: "Published on 1/20",
+  },
+  {
+    pgNum: 18,
+    altText: "",
+    notes: "Published on 1/22",
+  },
+  {
+    pgNum: 19,
+    altText: "",
+    notes: "Published on 1/27",
+  },
+  {
+    pgNum: 20,
+    altText: "",
+    notes: "Published on 1/29",
+  },
+  {
+    pgNum: 21,
+    altText: "",
+    notes: "Published on 2/3",
+  },
+  {
+    pgNum: 22,
+    altText: "",
+    notes: "Published on 2/5",
+  },
+  {
+    pgNum: 23,
+    altText: "",
+    notes: "Published on 2/10",
   },
 ];
 
