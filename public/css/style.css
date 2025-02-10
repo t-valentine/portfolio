@@ -124,10 +124,20 @@ h1 {
 
 /* this is just a cool box, it's the darker colored one */
 .box {
-  background-color: #f6adcb;
+  background-color: #92dcff;
   color: black;
-  border-radius: 10px;
-  padding: 5px 20px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.box p {
+  margin: 5px 0;
+}
+
+.box hr {
+  margin: 6px 0;
+  padding: 0;
+  color: #1e1755;
 }
 
 /* for buttons & fanlisting formatting */
@@ -143,44 +153,16 @@ h1 {
   width: 78px;
 }
 
-/* home illustrations styling */
-
-.grid-section {
-  border-radius: 15px;
-  padding: 10px 0;
-  border: 2px solid #f89a66;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 15px;
-  overflow-y: hidden;
-  width: auto;
+/* illustrations styling */
+.gallery {
+  padding-top: 1em;
+  columns: auto 3;
+  text-align: center;
 }
 
-.grid-item {
-  border: transparent;
-  border-radius: 10px;
-  transition: 0.25s;
-  filter: contrast(70%);
-  height: 100px;
-}
-
-.grid-item:hover {
-  cursor: pointer;
-  filter: contrast(100%);
-}
-
-#callout-illu-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  max-height: 51vh;
-  margin: 15px;
-}
-
-#callout-illu {
-  border: 1px solid #525252;
-  max-height: 50vh;
-  max-width: 100%;
+.gallery img {
+  border: 1px solid black;
+  width: 100%;
 }
 
 /* comics home styling */
@@ -244,6 +226,10 @@ feel free to play around with the order!
     order: 1;
   }
 
+  .gallery {
+    columns: auto 2;
+  }
+
   #navbar {
     height: auto;
     min-height: 40px;
@@ -254,5 +240,20 @@ feel free to play around with the order!
     flex-wrap: wrap;
     gap: 0 15px;
     padding-bottom: 8px;
+  }
+
+  .box p {
+    padding: 0 30px;
+  }
+
+  .box hr {
+    margin: revert;
+    padding: revert;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    columns: auto 1;
   }
 }
