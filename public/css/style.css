@@ -21,7 +21,7 @@ body {
 /* the "container" is what wraps your entire website */
 #container {
   max-width: 900px;
-  margin: 2em auto;
+  margin: 3em auto 1em auto;
 
   border: 1px solid white;
 }
@@ -44,9 +44,14 @@ EXCEPT for the navigation */
 
 /* navigation section */
 #navbar {
-  height: 40px;
+  height: 60px;
   background-color: #1e1755;
   width: 100%;
+  /* little izzy */
+  background-image: var(--header-image);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 #navbar ul {
@@ -54,11 +59,10 @@ EXCEPT for the navigation */
   padding: 0;
   margin: 0;
   list-style-type: none;
-  justify-content: space-evenly;
-}
-
-#navbar li {
-  padding-top: 10px;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  height: 100%;
 }
 
 #navbar li a {
@@ -83,6 +87,11 @@ aside {
   padding: 20px;
   font-size: smaller;
   order: 1;
+  border-right: 1px dotted white;
+}
+
+aside > ul {
+  padding-left: 20px;
 }
 
 /* main */
@@ -116,6 +125,7 @@ h1 {
 /* this is just a cool box, it's the darker colored one */
 .box {
   background-color: #f6adcb;
+  color: black;
   border-radius: 10px;
   padding: 5px 20px;
 }
@@ -212,11 +222,16 @@ h1 {
 }
 
 @media only screen and (max-width: 800px) {
+  #container {
+    width: 95%;
+  }
+
   #flex {
     flex-wrap: wrap;
   }
 
   aside {
+    border-top: 1px dotted white;
     order: 2;
     width: 100%;
   }
@@ -231,6 +246,8 @@ feel free to play around with the order!
 
   #navbar {
     height: auto;
+    min-height: 40px;
+    padding-top: 5px;
   }
 
   #navbar ul {

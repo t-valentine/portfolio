@@ -4,11 +4,15 @@ if (currentURL.includes("comics/")) {
   relativePath = "../..";
 }
 
+// took header out:
+// <div id="header" style="height: 178px"></div>
 document.querySelector("#headerArea").innerHTML =
-  `        
-<div id="header" style="height: 178px"></div>
+  `       
 <nav id="navbar" style="margin-bottom: 0px">
 <ul>
+<li><a href="` +
+  relativePath +
+  `/index.html">&#127968;</a></li>
 <li><a href="` +
   relativePath +
   `/illustrations.html">Illustrations</a></li>
@@ -19,15 +23,11 @@ document.querySelector("#headerArea").innerHTML =
 
             <li><a href="` +
   relativePath +
-  `/webhelp.html">Website Help</a></li>
+  `/projects.html">Projects</a></li>
 
             <li><a href="` +
   relativePath +
-  `/about.html">About Me</a></li>
-
-            <li><a href="` +
-  relativePath +
-  `/sitemap.html">Site Map</a></li>
+  `/about.html">About</a></li>
           </ul>
         </nav>`;
 
