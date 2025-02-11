@@ -21,9 +21,9 @@ document.querySelector("#headerArea").innerHTML =
   relativePath +
   `/comichome.html">Comics</a></li>
 
-            <li><a href="` +
+         <!--   <li><a href="` +
   relativePath +
-  `/projects.html">Projects</a></li>
+  `/projects.html">Projects⤴</a></li> -->
 
             <li><a href="` +
   relativePath +

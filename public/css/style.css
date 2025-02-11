@@ -214,6 +214,7 @@ h1 {
 
   aside {
     border-top: 1px dotted white;
+    font-size: medium;
     order: 2;
     width: 100%;
   }

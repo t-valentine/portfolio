@@ -11,7 +11,7 @@ const maxpg = 4; //the current number of pages your comic has in total. this DOE
 // COMIC PAGE SETTINGS
 const folder = "../../assets/comics/lindwyrm"; //directory of the folder where you keep all the comics
 const image = "pg"; //what you'll name all your comic pages
-const ext = "jpg"; //file extension of your comic pages
+const ext = "webp"; //file extension of your comic pages
 
 //THUMBNAIL SETTINGS
 const thumbFolder = "img/thumbs"; //directory of the folder where you keep all the thumbnail images for the comics, in case you want the archive page to use thumbnails.
