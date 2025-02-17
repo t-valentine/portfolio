@@ -172,20 +172,20 @@ h1 {
 }
 
 .comics-list li {
-  border: 2px solid #9a9ccd;
+  border: 2px solid #92dcff;
   border-radius: 15px;
   padding: 5px 10px;
   margin: 10px 0px;
 }
 
 .comics-list li:nth-child(even) {
-  border-color: #f6adcb;
+  border-color: #fdceff;
 }
 
 .show-comic-button {
   border: transparent;
   border-radius: 20px;
-  background-color: #9a9ccd;
+  background-color: #aea9f3;
   padding: 15px;
   margin-bottom: 5px;
   font-weight: 800;
