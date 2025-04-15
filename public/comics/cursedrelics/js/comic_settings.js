@@ -26,7 +26,7 @@ const navExt = "png"; //file extension of nav images
 const navScrollTo = "#showComic"; //id of the div you want the page to automatically scroll to when you click to the next comic. will turn off if you delete text between quotation marks
 
 if (pg == 0) {
-  pg = maxpg;
+  pg = 1;
 } //display MOST RECENT COMIC when the webpage is loaded. if you want to instead have the FIRST COMIC displayed first, change maxpg to 1.
 
 const pgData = [
