@@ -32,6 +32,10 @@ EXCEPT for the navigation */
   color: #92e9ff;
 }
 
+a[href^="http"]:where(:not(:has(img), [href*="domain.tld/"]))::after {
+  content: "↗";
+}
+
 #header {
   width: 100%;
   background-color: transparent;
@@ -122,6 +126,17 @@ h1 {
   font-size: 25px;
 }
 
+/* for responsive 2 column layouts */
+.columnBox {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+}
+
+.columnBox > div {
+  width: 50%;
+}
+
 /* this is just a cool box, it's the darker colored one */
 .box {
   background-color: #92dcff;
@@ -203,6 +218,18 @@ h1 {
   width: 49%;
 }
 
+/* Blog Styling */
+.nextprev {
+  background-color: rgba(30, 23, 85, 0.75);
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 15px;
+}
+
 @media only screen and (max-width: 800px) {
   #container {
     width: 95%;
@@ -256,5 +283,12 @@ feel free to play around with the order!
 @media only screen and (max-width: 500px) {
   .gallery {
     columns: auto 1;
+  }
+  .columnBox {
+    flex-direction: column;
+  }
+
+  .columnBox > div {
+    width: 100%;
   }
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>honey hamster art</title>
+    <link rel="icon" href="./assets/ditto.png" />
+    <meta name="description" content="" />
+    <link rel="icon" href="./assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="headerArea"></div>
+
+      <div id="flex">
+        <aside>
+          <h2 id="recent">All Posts</h2>
+          <div id="postlistdiv"></div>
+        </aside>
+        <main>
+          <h1>My blog!</h1>
+          <p>
+            My blog is now part of this website! This page has a list of the
+            <a href="#recent"> all posts</a> on the side (or bottom if you're on
+            a phone). I'll also have blog 'snippets' post directly below this
+            intro for things that I think are too small for their own blog post.
+          </p>
+          <hr />
+          <h2>Snippets</h2>
+          <h3>Adding Arrows to External Links (05-15-25)</h3>
+          <p>
+            I wanted to add arrows to all external links on this because I think
+            it looks nice and it makes it clear which links are external links.
+            Below is the code I used:
+          </p>
+          <textarea name="link" cols="NUMBER" rows="4" style="width: 100%">
+a[href^="http"]:where(:not(:has(img), [href*="domain.tld/"]))::after {
+  content: "↗";
+}
+</textarea
+          >
+          <p>
+            If you're googling, you'll see that mine has an `:has(img)` in the
+            'not' to exclude my image links. I thought the arrow after my images
+            (like the buttons on the comics page) looked goofy.
+          </p>
+          <p>
+            You could replace the arrow with anything you'd like or even replace
+            it with an image. I didn't want to mess around with that and thought
+            a simple arrow was fine.
+          </p>
+        </main>
+      </div>
+      <footer id="footer" style="margin-top: 0px"></footer>
+    </div>
+
+    <script src="../scripts/nav_footer.js" async defer></script>
+    <script src="./script.js" async defer></script>
+  </body>
+</html>

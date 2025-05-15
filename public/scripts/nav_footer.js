@@ -1,6 +1,9 @@
 let relativePath = ".";
 let currentURL = document.URL;
-if (currentURL.includes("comics/")) {
+if (currentURL.includes("blog/")) {
+  relativePath = "..";
+}
+if (currentURL.includes("comics/") || currentURL.includes("posts/")) {
   relativePath = "../..";
 }
 
