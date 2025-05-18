@@ -16,6 +16,7 @@ body {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* the "container" is what wraps your entire website */
@@ -180,6 +181,20 @@ h1 {
   width: 100%;
 }
 
+figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.illustrationHeader {
+  background-color: rgba(253, 206, 255, 0.75);
+  border-radius: 20px;
+  color: #1e1755;
+  text-align: center;
+  margin-top: 2em;
+}
+
 /* comics home styling */
 .comics-list {
   list-style-type: none;
@@ -255,9 +270,8 @@ feel free to play around with the order!
   }
 
   .gallery {
-    columns: auto 2;
+    columns: auto 3;
   }
-
   #navbar {
     height: auto;
     min-height: 40px;
@@ -282,7 +296,7 @@ feel free to play around with the order!
 
 @media only screen and (max-width: 500px) {
   .gallery {
-    columns: auto 1;
+    columns: auto 2;
   }
   .columnBox {
     flex-direction: column;

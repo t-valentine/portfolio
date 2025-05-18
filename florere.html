@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>florere</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      p {
+        font-family: "Fira Code", monospace;
+        text-align: center;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+      div {
+        margin: 0 25%;
+        max-width: 650px;
+      }
+      .bold {
+        font-weight: 800;
+      }
+      .rainbow {
+        -webkit-text-stroke: 1px black;
+        background: linear-gradient(
+          to right,
+          #6666ff,
+          #ff3399,
+          #ff8864,
+          #ffef64,
+          #00ff00,
+          #0099ff,
+          #8266ff
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 3s linear infinite;
+        background-size: 400% 100%;
+        font-size: 350%;
+      }
+
+      @keyframes rainbow_animation {
+        0%,
+        100% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 100% 0;
+        }
+      }
+    </style>
+    <div>
+      <p>
+        Thousands of years ago, six celestial beings bestowed magic and science
+        onto the citizens of a small planet named
+        <span class="bold">FLORERE</span>. Emboldened by their newfound
+        abilities, the people of <span class="bold">FLORERE</span> explored the
+        known universe!
+      </p>
+      <p style="margin-top: 10%">
+        Over time the people began to lose their way and forget important
+        lessons taught by the celestial beings. The people forgot so much they
+        even lost the map to the planet
+        <span class="bold">FLORERE</span>. Knowing people would become
+        over-zealous traversing space, <span class="bold">THE HUNTER</span> left
+        his will in the hands of the wizards.
+      </p>
+      <p style="margin-top: 20%">
+        It's said that the heir to the
+        <span class="bold">WILL OF VENATOR</span> can decipher the WILL and lead
+        people back to<br />
+        <span class="bold rainbow">FLORERE!</span>
+      </p>
+    </div>
+  </body>
+</html>
