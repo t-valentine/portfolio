@@ -1,137 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>honey hamster art</title>
-    <link rel="icon" href="./assets/ditto.png" />
-    <meta name="description" content="" />
-    <link rel="icon" href="./assets/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>honeyhamster</title>
+    <link rel="preload" href="mainstyle.css" as="style" />
+    <link rel="preload" href="./scripts/headerfooter.js" as="script" />
+    <link rel="stylesheet" href="mainstyle.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="headerArea"></div>
-      <div id="flex">
-        <aside>
-          <h2>Recent Updates</h2>
-          <div class="box">
-            <p><strong>06-21-2025</strong></p>
+    <div id="wrapper">
+      <header></header>
+      <main>
+        <div class="columns unequal">
+          <div>
+            <h2>it's fall again! 🍂</h2>
             <p>
-              Updated monthly message and added some resources to webhelp page.
+              I've been thinking about updating this website again- so here's
+              the new look. there's some other items I want to add/fix still, so
+              if you see something wonky just ignore that.
             </p>
-            <hr />
-            <p><strong>05-18-2025</strong></p>
-            <p>Updated illustration page and added smooth scrolling to CSS</p>
-            <hr />
-            <p><strong>05-15-2025</strong></p>
-          </div>
-          <h3>Fanlistings</h3>
-          <div class="buttons">
-            <a
-              href="https://fan.hopeslair.haliya.net/fl/kirby/index.php"
-              target="_blank"
-            >
-              <img
-                src="https://fan.hopeslair.haliya.net/fl/kirby/media/codes/50x50/kirby50x50_3.png"
-                alt="kirby"
-                style="max-width: 50px"
-              />
-            </a>
-          </div>
-          <p>
-            <strong>Need help making your own website?</strong>
-            <a href="./webhelp.html">Check out these resources!</a>
-          </p>
-        </aside>
-        <main>
-          <div class="columnBox">
-            <div>
-              <h2>August & September!</h2>
-              <p>Summer is almost over... 😢</p>
-              <p>
-                By the end of the season, I'd really like to have one finished
-                and to have finished writing a comic for the
-                <a
-                  href="https://bsky.app/profile/webcomicsparty.bsky.social/post/3lrni6taoo22x"
-                  >Flashback & Memories anthology</a
-                >.
-              </p>
-            </div>
-            <div
-              style="
-                background-color: #ddb3ff;
-                color: black;
-                text-align: center;
-                padding: 15px 5px;
-                border-radius: 5px;
-              "
-            >
-              <h3>
-                Read my newest comic,
-                <a
-                  href="./comics/cursedrelics/index.html"
-                  style="font-weight: 800; color: navy"
-                  >Cursed Relics!
-                </a>
-              </h3>
-              <p>
-                Follow Bryony and
-                <span style="text-decoration: line-through">Monilestriel</span>
-                Monilestriel's body as they explore the Florian ruins and the
-                artifacts within.
-              </p>
-            </div>
-          </div>
-          <hr />
-          <h2>Other Places to Find Me</h2>
-          <ul>
-            <li>
-              <a href="https://bsky.app/profile/honey-hamster.bsky.social"
-                >Bsky</a
+            <p>
+              Mostly been busy with my first grad school class and general life
+              stuff. I'm working on a comic for an anthology and hypothetically
+              also putting out another shorter comic by the end of the year.
+              we'll see.
+            </p>
+            <div class="dropdown">
+              <button
+                class="dropdown-show"
+                value="example"
+                onclick="showSection(this)"
               >
-            </li>
-            <li><a href="https://honey-hamster.tumblr.com/">Tumblr</a></li>
-          </ul>
-          <div class="buttons">
-            <img
-              src="./assets/buttons/fckgoogle.gif"
-              alt="88x31 button that says fuck google"
-            />
-            <img
-              src="./assets/buttons/hamsterbuddies.gif"
-              alt="88x31 button that says woohoo over a picture of hamsters"
-            />
-            <img
-              src="./assets/buttons/progress.png"
-              alt="88x31 button progress pride flag"
-            />
-            <img
-              src="./assets/buttons/linux_mint.gif"
-              alt="88x31 button that says linux mint and has the mint logo"
-            />
-            <img
-              src="./assets/buttons/human-made.gif"
-              alt="88x31 button that has a crossed out robot and says human made"
-            />
-            <img
-              src="./assets/buttons/neocities-pink.gif"
-              alt="pink 88x31 button that says neocities.org- the web is yours"
-            />
-            <img
-              src="./assets/buttons/valid-any.gif"
-              alt="88x31 button that says any browser 0.0"
-            />
+                <p>Currently</p>
+                <p>-</p>
+              </button>
+              <!-- I hardcoded this one open -->
+              <div id="example" class="dropdown-content" style="display: block">
+                <table>
+                  <tr>
+                    <th>Listening</th>
+                    <td>
+                      <a href="https://mediaclub.plus/">Media Club Plus</a> and
+                      Reba McEntire
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Watching</th>
+                    <td>
+                      Spooky Movies (most recently Sleepaway Camp and The
+                      Stepfather)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Playing</th>
+                    <td>Animal Crossing New Horizons and FNV</td>
+                  </tr>
+                  <tr>
+                    <th>IRL</th>
+                    <td>
+                      Grad School again 🤡 and getting ready for 5k in november
+                    </td>
+                  </tr>
+                </table>
+                <p style="margin: 0; text-align: end; font-size: small">
+                  Last Updated 09/29/2025
+                </p>
+              </div>
+            </div>
           </div>
-        </main>
-      </div>
-      <footer id="footer" style="margin-top: 0px"></footer>
+          <div>
+            <h2>Recent Updates</h2>
+            <div class="box" style="font-size: smaller">
+              <p><strong>09-28-2025</strong></p>
+              <p>New look!</p>
+              <hr />
+              <p><strong>06-21-2025</strong></p>
+              <p>
+                Updated monthly message and added some resources to webhelp
+                page.
+              </p>
+              <hr />
+              <p><strong>05-18-2025</strong></p>
+              <p>Updated illustration page and added smooth scrolling to CSS</p>
+            </div>
+            <h2>Fanlistings</h2>
+            <div class="buttons">
+              <a
+                href="https://fan.hopeslair.haliya.net/fl/kirby/index.php"
+                target="_blank"
+              >
+                <img
+                  src="https://fan.hopeslair.haliya.net/fl/kirby/media/codes/50x50/kirby50x50_3.png"
+                  alt="kirby"
+                  style="max-width: 50px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <img src="./assets/buttons/fckgoogle.gif" />
+          <img src="./assets/buttons/hamsterbuddies.gif" />
+          <img src="./assets/buttons/human-made.gif" />
+          <img src="./assets/buttons/linux_mint.gif" />
+          <img src="./assets/buttons/neocities-pink.gif" />
+          <img src="./assets/buttons/progress.png" />
+          <img src="./assets/buttons/typhrakromer.gif" />
+          <img src="./assets/buttons/valid-any.gif" />
+        </div>
+      </main>
+      <footer></footer>
     </div>
 
-    <!--
-    gameboy images from 
-    https://www.vgmpf.com/Wiki/index.php?title=User:GatoVerde95-->
-    <script src="./scripts/nav_footer.js" async defer></script>
+    <script src="./scripts/headerfooter.js" defer></script>
+    <script src="./scripts/sectionhandling.js" defer></script>
   </body>
 </html>

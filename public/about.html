@@ -1,98 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>honey hamster art</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./assets/favicon.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>honeyhamster</title>
+    <link rel="preload" href="mainstyle.css" as="style" />
+    <link rel="preload" href="./scripts/headerfooter.js" as="script" />
+    <link rel="stylesheet" href="mainstyle.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="headerArea"></div>
-
-      <div id="flex">
-        <aside>
-          <h2>Link to My Site!</h2>
-          <img
-            src="./assets/honeyhamster_button.png"
-            alt="88x31 button that says honeyhamster.neocities.org"
-          />
-          <textarea name="link" cols="NUMBER" rows="NUMBER">
-<a href="https://honeyhamster.neocities.org/" target="_blank"><img src="https://honeyhamster.neocities.org/assets/honeyhamster_button.png"></a>
-</textarea
-          >
-          <hr />
-          <h2>Site Map</h2>
-          <ul>
-            <li><a href="index.html">Home/Start Screen</a></li>
-            <li>Art</li>
-            <ul style="padding-left: 10px">
-              <li>
-                <a href="illustrations.html">Illustrations</a>
-              </li>
-              <li><a href="comichome.html">Comics</a></li>
-              <ul style="padding-left: 10px">
-                <li>
-                  <a href="./comics/cursedrelics/index.html">Cursed Relics</a>
-                </li>
-                <li>The Excavation and Exhumation of Magick</li>
-                <li>
-                  <a href="./comics/hitd/index.html">Heavy is the Head</a>
-                </li>
-                <li><a href="./comics/lindwyrm/index.html">The Lindwyrm</a></li>
-              </ul>
-            </ul>
-            <li><a href="aboutme.html">About</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-            <li>Miscellaneous</li>
-            <ul>
-              <li><a href="webhelp.html">Resources (for website making)</a></li>
-              <li><a href="feed.xml">RSS Feed</a></li>
-            </ul>
-          </ul>
-        </aside>
-        <main>
-          <h2>About Me</h2>
-          <div style="display: flex; flex-wrap: wrap">
-            <img
-              src="./assets/porygon.png"
-              style="width: 300px; margin: 0 auto"
-            />
+    <div id="wrapper">
+      <header></header>
+      <main>
+        <div class="columns unequal">
+          <div>
+            <h2>About Me</h2>
             <p>
-              My name is Val, I'm an artist who likes experimenting with new
-              mediums and drawing comics. I work as a software developer for my
-              day job and in my free time I garden, play ttrpgs, and read.
+              My name is Valentine and I'm a hobby artist with a billion
+              additional interests. I love drawing original characters and
+              making comics.
             </p>
-            <div style="display: block">
-              <h2>Socials</h2>
-              <ul>
-                <li>
-                  <a
-                    href="https://bsky.app/profile/honey-hamster.bsky.social"
-                    target="_blank"
-                    >BlueSky</a
-                  >
-                </li>
-                <li>
-                  <a href="https://honey-hamster.tumblr.com/" target="_blank"
-                    >Tumblr</a
-                  >
-                </li>
-              </ul>
+            <h3>A History of this Site</h3>
+            <p>
+              I've had this site since 2022 and it's been through a couple of
+              iterations! Here's what it's looked like over time:
+            </p>
+            <div class="gallery" style="columns: auto 1">
+              <figure>
+                <img
+                  src="./assets/website-iterations/2025_jan.png"
+                  alt="2024"
+                />
+                <figcaption>Spring 2025</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/website-iterations/2024.png" alt="2024" />
+                <figcaption>2024</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./assets/website-iterations/2023_spring.png"
+                  alt="Spring 2023"
+                />
+                <figcaption>Spring 2023</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./assets/website-iterations/2022-winter.png"
+                  alt="Winter 2022"
+                />
+                <figcaption>Winter 2022</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./assets/website-iterations/2022-oct.png"
+                  alt="October 2022"
+                />
+                <figcaption>October 2022</figcaption>
+              </figure>
             </div>
-
-            <h1>
-              If you wanna know more about me... check out my
-              <a href="blog/index.html">blog!</a>
-            </h1>
           </div>
-        </main>
-      </div>
-      <footer id="footer" style="margin-top: 0px"></footer>
+          <div>
+            <h2>Other Places to Find Me</h2>
+            <ul>
+              <li><a href="" target="_blank">Bsky</a></li>
+              <li><a href="" target="_blank">Itch.io</a></li>
+              <li><a href="" target="_blank">Tumblr</a></li>
+            </ul>
+            <div class="dropdown">
+              <button
+                class="dropdown-show"
+                value="fun-facts"
+                onclick="showSection(this)"
+              >
+                <p>Fun Facts</p>
+                <p>+</p>
+              </button>
+              <div id="fun-facts" class="dropdown-content">
+                <p>
+                  <span style="font-weight: 800"> Pronouns:</span> He/Him &
+                  She/Her
+                </p>
+                <p><span style="font-weight: 800"> Age:</span> 30+</p>
+                <p>
+                  <span style="font-weight: 800"> Pets:</span> Taako
+                  (chihuahua), Vetinari (black cat), and Connor (tabby cat)
+                </p>
+                <p>
+                  <span style="font-weight: 800"> Various Hobbies:</span> Hand
+                  sewing, coding, birding, TTRPGs, running, tinkering with
+                  mechanical keyboards, playing video games (et cetera)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
     </div>
 
-    <script src="./scripts/nav_footer.js" async defer></script>
+    <script src="./scripts/headerfooter.js" defer></script>
+    <script src="./scripts/sectionhandling.js" defer></script>
   </body>
 </html>
