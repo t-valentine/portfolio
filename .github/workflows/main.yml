@@ -1,8 +1,12 @@
 name: Deploy to Neocities
 
+defaults:
+  run:
+    working-directory: ./public
+
 env:
   FORCE_COLOR: 1
-  NODE_VERSION: lts/*
+  node_version: lts/*
 
 concurrency:
   group: deploy-to-neocities
@@ -11,48 +15,50 @@ concurrency:
 on:
   push:
     branches:
-      - main
-      # make sure your branch name matches! (ie. main, master, etc)
+      - 'main'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Run workflow'
+        required: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout the repository code
         uses: actions/checkout@v4
-        
-      - name: Install Node.js
+
+      - run: echo "🎉 Job automatically triggered by ${{ github.event_name }} event."
+      - run: echo "🐧 Running on ${{ runner.os }}!"
+      - run: echo "🔎 Branch :/ ${{ github.ref }}"
+      - run: echo "🔎 Repository:/ ${{ github.repository }}."
+
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
-        # this will use the latest LTS version of Node.js
-        # if you need a specific version, replace ${{ env.NODE_VERSION }} with that version number
-        
+          node-version: ${{ env.node_version }}
+
       - name: Get npm cache directory
         id: npm-cache-dir
         run: echo "dir=$(npm config get cache)" >> $GITHUB_OUTPUT
-        
-      - name: Cache npm dependencies
-        uses: actions/cache@v4
+
+      - uses: actions/cache@v4
         id: npm-cache
         with:
           path: ${{ steps.npm-cache-dir.outputs.dir }}
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-        # caches dependencies and other commonly re-used files
-        # so they do not need to be re-installed on each run
-        
+
       - name: Install dependencies and build site
         run: |
-          npm ci
+          npm install
           npm run build
-        
+
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@master
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-          cleanup: false
-          dist_dir: dist
-        # if dist_dir is within a subfolder, update the filepath to reflect that
+          cleanup: true
+          dist_dir: frontend/dist
