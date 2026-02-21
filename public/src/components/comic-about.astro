@@ -1,0 +1,44 @@
+---
+const { title } = Astro.props;
+const { date } = Astro.props;
+const { img } = Astro.props;
+const { blurb } = Astro.props;
+const { link } = Astro.props;
+let imgUrl = `/comics/${img}`;
+---
+
+<style>
+  img {
+    object-fit: cover;
+    height: 75px;
+    width: 100%;
+    border: 1px solid black;
+  }
+  h3,
+  p {
+    margin: 5px 0px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div > p {
+    text-align: right;
+  }
+  p {
+    font-size: 12px;
+  }
+  hr {
+    border: 0px;
+    border-top: 1px dashed black;
+  }
+</style>
+<img src={imgUrl} />
+<div>
+  <h3>{title}</h3>
+  <p>Published on: {date}</p>
+</div>
+<p>{blurb}</p>
+<a href={link}>Read Here</a>
+<hr />

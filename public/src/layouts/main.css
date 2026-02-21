@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  background-color: #c1f5c5;
+  background-image:
+    linear-gradient(90deg, #7bb0a880 20px, transparent 20px),
+    linear-gradient(#7bb0a880 20px, transparent 20px);
+  background-position: 10px 10px;
+  background-size: 60px 60px;
+}
+
+main {
+  /*grid styling*/
+  display: grid;
+  grid-template-areas: "left right tabs";
+  grid-template-columns: repeat(2, 1fr) fit-content(100px);
+  /*spacing/orientation on page styling*/
+  width: 80vw;
+  /* 50 is half of tab width, so this centers the notebook itself*/
+  margin-left: calc(10vw + 50px);
+  margin-right: calc(10vw - 50px);
+  height: calc(100vh - 200px);
+  padding-top: 1em;
+  filter: drop-shadow(0px 15px 25px #061b36);
+}
+
+#highest-title {
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3rem;
+  color: #10305a;
+}
+
+#left-page,
+#right-page {
+  padding: 10px 25px;
+  overflow-y: scroll;
+}
+
+#left-page {
+  grid-area: left;
+  padding-right: 35px;
+  /*page apperance styling*/
+  background-image: url("../../public/desktop_leftBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#right-page {
+  grid-area: right;
+  padding-left: 35px;
+  /*page apperance styling*/
+  border-left: 0px;
+  background-image: url("../../public/desktop_rightBG2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*when single-page is used*/
+main:has(#single-page) {
+  grid-template-areas: "center center tabs";
+  grid-template-columns: repeat(2, 1fr) fit-content(100px);
+}
+
+main:has(#single-page) #right-page,
+main:has(#single-page) #left-page {
+  display: none; /* hides pages*/
+}
+
+#single-page {
+  grid-area: center;
+  padding: 10px 25px;
+  background-image: url("../../public/desktopBG.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow-y: scroll;
+}
+
+#bottom-spirals {
+  display: none;
+}
+
+#tabs {
+  grid-area: tabs;
+  background-image: url("../../public/desktop_navBG.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+a {
+  color: #179299;
+  text-decoration-style: dotted;
+}
+
+a[href^="http"]:where(:not(:has(img), [href*="domain.tld/"]))::after {
+  content: "↗";
+}
+
+.button-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.button-gallery img {
+  height: 31px;
+  width: 88px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 851px) {
+  main {
+    width: 90vw;
+    margin-left: calc(5vw + 50px);
+    margin-right: calc(5vw - 50px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    grid-template-areas:
+      "tabs"
+      "left"
+      "right"
+      "spirals";
+    grid-template-rows: fit-content(100px) repeat(2, auto);
+    grid-template-columns: auto;
+    height: auto;
+    margin: auto;
+    width: 95vw;
+    filter: drop-shadow(0px 15px 10px #061b36);
+  }
+  #highest-title {
+    margin-top: auto;
+  }
+  #highest-title > h1 {
+    margin-bottom: 10px;
+  }
+  #left-page {
+    background-image: url("../../public/mobileBG_right.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  #right-page {
+    border-top: 0px;
+    background-image: url("../../public/mobileBG_left.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  main:has(#single-page) {
+    grid-template-areas:
+      "tabs"
+      "center"
+      "spirals";
+    grid-template-columns: 100%;
+  }
+
+  #single-page {
+    border-top: 0px;
+    background-image: url("../../public/mobileBG_left.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  #bottom-spirals {
+    display: block;
+    grid-area: spirals;
+    width: 100%;
+  }
+
+  #tabs {
+    max-height: 100px;
+    background-image: url("../../public/mobileBG_nav.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: center bottom;
+  }
+}

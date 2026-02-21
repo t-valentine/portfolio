@@ -1,0 +1,55 @@
+---
+import MainLayout from "../layouts/mainLayout.astro";
+---
+
+<MainLayout title="About">
+  <Fragment slot="left">
+    <h2>About Me</h2>
+    <p>
+      My name is Valentine. I like to draw, program stuff (like this website),
+      and go for long walks/runs.
+    </p>
+    <h2>Other Places to Find Me Online</h2>
+    <ul>
+      <li>
+        <a href="https://bsky.app/profile/honey-hamster.bsky.social">bsky</a>
+      </li>
+      <li><a href="https://honey-hamster.tumblr.com/">tumblr</a></li>
+      <li>in discord servers under various aliases</li>
+    </ul>
+  </Fragment>
+  <Fragment slot="right">
+    <h2>About this Website</h2>
+    <p>
+      Originally, this was an HTML/CSS/JS only site. In 2026, I moved to using
+      Astro. <!--You can read more about that decision on the <a href=""
+        >blog post</a
+      >. TL;DR: -->(it's
+      easier for me to maintain and edit an Astro site)
+    </p>
+    <h3>Website Elements</h3>
+    <ul>
+      <li>
+        Uses <a href="https://www.brailleinstitute.org/freefont/"
+          >atkinson hyperlegible <strong>mono</strong></a
+        > as the font
+      </li>
+      <li>
+        The <strong>tab and hyperlink colors</strong> are pulled from the <a
+          href="https://catppuccin.com/palette/">Catpuccin color scheme</a
+        >.
+      </li>
+      <li>
+        The <strong>background pattern</strong> is <a
+          href="https://css-pattern.com/curved-segments/"
+          >this specific pattern</a
+        > from css-patterns.com
+      </li>
+      <li>
+        Page backgrounds scanned by <strong>me!</strong> The PC background is a Hobonichi
+        Techo Original planner and the mobile background is a pocket Maruman Utoka
+        notebook. Feel free to use these elements on your own websites.
+      </li>
+    </ul>
+  </Fragment>
+</MainLayout>

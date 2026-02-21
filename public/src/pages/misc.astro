@@ -1,0 +1,44 @@
+---
+import MainLayout from "../layouts/mainLayout.astro";
+---
+
+<style>
+  hr {
+    border: 0px;
+    border-top: 1px dashed black;
+  }
+</style>
+<MainLayout title="Misc">
+  <Fragment slot="left">
+    <h2>Blog</h2>
+    <p>under construction! eventually, there will be one</p>
+    <h2>Other Pages on This Site</h2>
+    <ul>
+      <li><a href="/misc/webhelp">webhelp</a></li>
+    </ul>
+  </Fragment>
+  <Fragment slot="right">
+    <h2>coding projects</h2>
+    <a href="/misc/pkmnmatch"><h3>Pokemon Match</h3></a>
+    <p>
+      Little game (?) that shows you which pokemon are closest to the entered
+      height and weight. Uses the PokeAPI.
+    </p>
+    <hr />
+    <h3>HTML Portfolio Template</h3>
+    <p>
+      HTML/CSS template I made to help less technical artists put together their
+      own portfolio pages. Can be found on my <a
+        href="https://h0neymice.itch.io/html-portfolio-template"
+      >
+        itch.io
+      </a> (I figured itch.io was the least scary way to ask someone to download random
+      files.)
+    </p>
+    <p>
+      A live demo can be found <a href="https://html-portfolio.neocities.org/"
+        >here.</a
+      >
+    </p>
+  </Fragment>
+</MainLayout>

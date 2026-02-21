@@ -1,0 +1,312 @@
+---
+import SinglecolumnLayout from "../../layouts/singlecolumnLayout.astro";
+---
+
+<style>
+  input {
+    width: 75px;
+  }
+
+  #submitButton {
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border: 0px transparent;
+    cursor: pointer;
+  }
+</style>
+<SinglecolumnLayout title="pokemon match">
+  <p>Find what pokemon closest matches <em>your</em> height and weight.</p>
+  <h2>Input Your Stats</h2>
+  <p>
+    You need to put your height in inches (so if you're 5'5", you'd put 65).
+  </p>
+  <form id="pokemonForm">
+    <!--
+      <label for="measurements">Select measurement type:</label><br />
+      <select id="measurements" name="measurements">
+        <option value="inch">Inches and Pounds</option>
+        <option value="cm">Centimeters and Kilograms</option>
+      </select>
+      <br />-->
+    <p>
+      <label for="height">Height: </label>
+      <input
+        type="number"
+        name="height"
+        id="height"
+        min="10"
+        max="400"
+        required
+      />
+      inches
+    </p>
+    <p>
+      <label for="weight">Weight: </label>
+      <input type="number" name="weight" id="weight" min="10" required />
+      pounds
+    </p>
+    <input type="submit" value="Submit" id="submitButton" />
+  </form>
+  <h2>Matching Pokemon:</h2>
+  <div id="matchingPokemon"></div>
+  <div id="nothing">
+    <h2>No close results found!</h2>
+  </div>
+  <hr />
+  <div id="about">
+    <h3>How does this work?</h3>
+    <p>
+      This website makes calls to the
+      <a href="https://pokeapi.co/">PokeAPI</a> based on the height and weight you
+      enter. It first searches for an "exact" match and then searches for 2 extended
+      ranges to show you the close pokemon.
+    </p>
+    <p>
+      You may get an error that says 'no close results found'. Dunsparce is 4
+      feet long, so Pokemon sizes are weird. Don't worry about it.
+    </p>
+  </div>
+  <script>
+    // @ts-nocheck
+    async function getMatches(event) {
+      console.log("get matches run");
+
+      event.preventDefault();
+
+      let inputHeight = (document.getElementById("height") as HTMLInputElement)
+        ?.value;
+      let inputWeight = (document.getElementById("weight") as HTMLInputElement)
+        ?.value;
+
+      let userInput = convertMeasurements("tohex", inputHeight, inputWeight);
+      console.log("inputheight: " + inputHeight);
+      console.log("converted: " + userInput[0]);
+      let height = userInput[0];
+      console.log("final: " + height);
+      let weight = userInput[1];
+
+      //let pokemonMatches = [[1,"bulbasaur"]];
+      let pokemonMatches = [];
+      // clears array and div for multiple form submissions
+      pokemonMatches.length = 0;
+      (
+        document.getElementById("matchingPokemon") as HTMLInputElement
+      ).innerHTML = "";
+      //caterpie is 3, 29
+      pokemonMatches.push(await getExactMatch(height, weight));
+      pokemonMatches = pokemonMatches.filter(Boolean);
+      noMatches(true);
+      // checking
+      if (pokemonMatches.length > 0 && pokemonMatches) {
+        console.log("exact match, rendering");
+        renderData(pokemonMatches[0]);
+      } else {
+        // range 1
+        pokemonMatches = await getMatchRange(
+          height - 1,
+          height + 1,
+          weight - 9,
+          weight + 9,
+        );
+        console.log("range 1 finished");
+        if (pokemonMatches.length > 0 && pokemonMatches) {
+          console.log("pokemonMatches has data, rendering");
+          renderData(pokemonMatches);
+        } else {
+          //pokemonMatches = await getExactHeight(height);
+          pokemonMatches = await getMatchRange(
+            height - 1,
+            height + 1,
+            weight - 158,
+            weight + 158,
+          );
+          if (pokemonMatches.length > 0 && pokemonMatches) {
+            console.log("pokemonMatches has data, rendering");
+            renderData(pokemonMatches);
+          } else {
+            noMatches(false);
+          }
+        }
+      }
+      // heights in range 1
+      // heights in range 2
+      // nada...
+    }
+
+    async function getExactMatch(height, weight) {
+      console.log("getExactMatch run");
+      let results = await fetch("https://beta.pokeapi.co/graphql/v1beta", {
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          query:
+            `{
+            pokemon_v2_pokemon(where: {height: {_eq: ` +
+            height +
+            `}, _and: {weight: {_eq: ` +
+            weight +
+            `}}}, order_by: {id: asc}) {
+    id
+    name
+    height
+    weight
+  }
+          }`,
+        }),
+      });
+      let match = await results.json();
+      return createPokemonArray(match);
+    }
+
+    async function getMatchRange(heightLow, heightHigh, weightLow, weightHigh) {
+      console.log("getMatchRange run");
+      let results = await fetch("https://beta.pokeapi.co/graphql/v1beta", {
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          query:
+            `{
+            pokemon_v2_pokemon(where: {height: {_gte: ` +
+            heightLow +
+            `, _lte: ` +
+            heightHigh +
+            `}, _and: {weight: {_gte: ` +
+            weightLow +
+            `, _lte: ` +
+            weightHigh +
+            `}}}, order_by: {id: asc}) {
+    id
+    name
+    height
+    weight
+  }
+          }`,
+        }),
+      });
+      let match = await results.json();
+      //console.log("match range")
+      //console.log(match);
+      return createPokemonArray(match);
+    }
+
+    async function getExactHeight(height) {
+      console.log("getExactHeight run");
+      let results = await fetch("https://beta.pokeapi.co/graphql/v1beta", {
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          query:
+            `{
+            pokemon_v2_pokemon(where: {height: {_eq: ` +
+            height +
+            `}}, order_by: {id: asc}) {
+    id
+    name
+    height
+    weight
+  }
+          }`,
+        }),
+      });
+      let match = await results.json();
+      //console.log(height)
+      return createPokemonArray(match);
+    }
+
+    function createPokemonArray(pokemonMatch) {
+      let matchArray = [];
+      let matchLength = pokemonMatch.data.pokemon_v2_pokemon.length;
+      if (matchLength == 0) {
+        console.log("exact match doesn't exist");
+        return "";
+      } else if (matchLength == 1) {
+        let singleResult = pokemonMatch.data.pokemon_v2_pokemon[0];
+        Object.keys(singleResult).map((key) =>
+          matchArray.push(singleResult[key]),
+        );
+        matchArray = [matchArray];
+      } else {
+        for (let i = 0; i < matchLength; i++) {
+          let tempArray = [];
+          let result = pokemonMatch.data.pokemon_v2_pokemon[i];
+          Object.keys(result).map((key) => tempArray.push(result[key]));
+          matchArray.push(tempArray);
+        }
+      }
+      //console.log(matchArray);
+      return matchArray;
+    }
+
+    async function renderData(data) {
+      //console.log(data);
+      const div = document.getElementById("matchingPokemon");
+      data.forEach((item) => {
+        let title = document.createElement("h2");
+        let pokemonName = item[1];
+        title.innerHTML =
+          String(pokemonName).charAt(0).toUpperCase() +
+          String(pokemonName).slice(1);
+        div.append(title);
+
+        let list = document.createElement("ul");
+
+        let converted = convertMeasurements("toreg", item[2], item[3]);
+        //console.log(converted);
+
+        let height = document.createElement("li");
+        height.innerHTML = "Height: " + converted[0] + " inches";
+        list.append(height);
+
+        let weight = document.createElement("li");
+        weight.innerHTML = "Weight: " + converted[1] + " pounds";
+        list.append(weight);
+
+        div.append(list);
+        //console.log(item);
+      });
+    }
+
+    function noMatches(matches) {
+      console.log("nothing...");
+      const div = document.getElementById("nothing");
+      if (matches) {
+        div.style.display = "none";
+      } else {
+        div.style.display = "block";
+      }
+    }
+
+    function convertMeasurements(direction, height, weight) {
+      let convertedHeight;
+      let convertedWeight;
+      if (direction == "tohex") {
+        convertedHeight = height / 3.937;
+        convertedHeight = Math.ceil(convertedHeight);
+        convertedWeight = weight * 4.536;
+        convertedWeight = Math.round(convertedWeight);
+      } else {
+        convertedHeight = height * 3.937;
+        convertedHeight = Math.ceil(convertedHeight);
+        convertedWeight = weight / 4.536;
+        convertedWeight = Math.round(convertedWeight * 10) / 10;
+      }
+      return [convertedHeight, convertedWeight];
+    }
+
+    const form = document.getElementById("pokemonForm");
+    console.log(form);
+    form?.addEventListener("submit", getMatches);
+  </script>
+</SinglecolumnLayout>

@@ -1,0 +1,237 @@
+---
+import SinglecolumnLayout from "../layouts/singlecolumnLayout.astro";
+---
+
+<style>
+  .gallery {
+    padding-top: 1em;
+    columns: auto 3;
+    column-gap: 5px;
+    text-align: center;
+  }
+
+  figure {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .gallery img {
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+  }
+  h2,
+  h3 {
+    padding: 5px;
+    border-radius: 8px;
+  }
+  h2 {
+    background-color: #ca9ee6;
+  }
+  h3 {
+    background-color: #f5c2e7;
+  }
+
+  @media screen and (max-width: 850px) {
+    .gallery {
+      columns: 1;
+    }
+  }
+</style>
+<SinglecolumnLayout title="Art">
+  <div>
+    <p>
+      <span style="margin-right: 15px; font-weight: 800;"
+        >Table of Contents...</span
+      >
+      <a href="#general">general</a> | <a href="#ttrpg">TTRPG</a> | <a
+        href="#fanart">Fanart</a
+      > | <a href="#projects">projects</a>
+    </p>
+  </div>
+  <h2 id="general">General</h2>
+  <div class="gallery">
+    <figure>
+      <img
+        src="../../public/illustrations/fairies.webp"
+        alt="Good Morning - 2023"
+      />
+      <figcaption>Looking for Adventure (2025)</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/pygmalion.webp"
+        alt="PC Pygmalion - 2024"
+      />
+      <figcaption>PC Pygmalion (2024)</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/vampyre.webp"
+        alt="Good Morning - 2023"
+      />
+      <figcaption>Good Morning (2023)</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/trans.webp"
+        alt="Metamorphosis - 2020"
+      />
+      <figcaption>Metamorphosis (2020)</figcaption>
+    </figure>
+  </div>
+  <h2 id="ttrpg">TTRPG</h2>
+  <div class="gallery">
+    <img src="../../public/illustrations/izzyseason3.webp" />
+    <img
+      src="../../public/illustrations/noreturn.webp"
+      alt="Point of No Return - 2023"
+    />
+    <img
+      src="../../public/illustrations/strahd.webp"
+      alt="The Man Who Sold The World - 2022"
+    />
+    <img
+      src="../../public/illustrations/newnutcracker.webp"
+      alt="New Nutcracker - 2023"
+    />
+    <img src="../../public/illustrations/haldir.webp" alt="Haldir - 2020" />
+    <img
+      src="../../public/illustrations/ishmael.webp"
+      alt="Ishmael w/Ravens - 2022"
+    />
+  </div>
+  <h2 id="fanart">Fanart</h2>
+  <div class="gallery">
+    <figure>
+      <img
+        src="../../public/illustrations/deltarune.webp"
+        alt="Deltarune - 2025"
+      />
+      <figcaption>Deltarune (2025)</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/uma.webp"
+        alt="Lucky Matikanefukukitaru- 2025"
+      />
+      <figcaption>Lucky Matikanefukukitaru (2025)</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/hanadtiys.webp"
+        alt="Crabbng 2k - Draw this in your style 2025"
+      />
+      <figcaption>
+        Hana from
+        <a href="https://kingsofsorts.com/">Kings of Sorts</a> (2025)
+      </figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/potsFanart.webp"
+        alt="Prophet of the Sun 2025"
+      />
+      <figcaption>
+        Fanart for Prophet of the Sun-
+        <a href="https://prophetofthesun.com/guest-art-9">
+          and this was a guest piece!</a
+        >
+        (2024?5)
+      </figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/Tama.webp"
+        alt="Tamagotchi fanart
+            2024"
+      />
+      <figcaption>Tamagotchi (2024)</figcaption>
+    </figure>
+  </div>
+  <h2 class="illustrationHeader" id="projects">Misc. Projects</h2>
+  <h3>Elara</h3>
+  <p>
+    I wanted to make my own video game manual! Inspired by games and manuals I
+    liked as a kid.
+  </p>
+  <div class="gallery" style="columns: auto 2">
+    <img src="../../public/illustrations/elara1.webp" />
+    <img src="../../public/illustrations/elara2.webp" />
+    <img src="../../public/illustrations/elara3.webp" />
+    <img src="../../public/illustrations/elara4.webp" />
+    <img src="../../public/illustrations/elara5.webp" />
+    <img src="../../public/illustrations/elara6.webp" />
+  </div>
+  <h3>Labors of the Months</h3>
+  <p>
+    In 2024, I drew an illustration each month. It's kind of very loosely based
+    on the idea of a medieval Labors of Hours.
+  </p>
+  <div class="gallery" style="columns: auto 3">
+    <figure>
+      <img src="../../public/illustrations/months1.webp" alt="January - 2024" />
+      <figcaption>January - ink and grey markers</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/Apr.webp" />
+      <figcaption>April - watercolor and posca</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/July.webp" />
+      <figcaption>July - poscas and ink</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/Oct.webp" />
+      <figcaption>October - poscas and ink</figcaption>
+    </figure>
+    <figure>
+      <img
+        src="../../public/illustrations/months2.webp"
+        alt="February - 2024"
+      />
+      <figcaption>February - watercolor and colored pencils</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/May.webp" />
+      <figcaption>May - poscas, markers, and ink</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/August.webp" />
+      <figcaption>August - watercolors</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/November_.webp" />
+      <figcaption>November - poscas</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/Mar.webp" />
+      <figcaption>
+        March - colored pencils and cut outs from seed packets
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/June.webp" />
+      <figcaption>June - watercolor</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/September.webp" />
+      <figcaption>September - colored pencils and ink</figcaption>
+    </figure>
+    <figure>
+      <img src="../../public/illustrations/Dec.webp" />
+      <figcaption>December - poscas and ink</figcaption>
+    </figure>
+  </div>
+  <div>
+    <p>
+      <span style="margin-right: 15px; font-weight: 800;"
+        >Table of Contents...</span
+      >
+      <a href="#general">general</a> | <a href="#ttrpg">TTRPG</a> | <a
+        href="#fanart">Fanart</a
+      > | <a href="#projects">projects</a>
+    </p>
+  </div>
+</SinglecolumnLayout>

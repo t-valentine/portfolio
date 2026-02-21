@@ -1,0 +1,35 @@
+---
+import "./main.css";
+import Tabs from "../components/tabs.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>honeyhamster site</title>
+    <link rel="icon" type="image/x-icon" href="../../public/favicon.png" />
+  </head>
+
+  <body>
+    <div id="highest-title">
+      <h1>
+        {!title ? "honey hamster" : title.toLowerCase()}
+      </h1>
+    </div>
+    <main>
+      <slot name="single-page" />
+      <div id="left-page">
+        <slot name="left" />
+      </div>
+      <div id="right-page">
+        <slot name="right" />
+      </div>
+      <img src="../../public/mobileBG_leftborder.png" id="bottom-spirals" />
+      <div id="tabs">
+        <Tabs />
+      </div>
+    </main>
+  </body>
+</html>
