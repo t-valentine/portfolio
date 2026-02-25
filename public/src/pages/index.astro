@@ -1,56 +1,60 @@
 ---
 import MainLayout from "../layouts/mainLayout.astro";
+import ComicAbout from "../components/comic-about.astro";
 ---
 
 <style>
-  div {
+  #changelog {
     border: 1px solid black;
     height: 250px;
     overflow-y: scroll;
     font-size: 12px;
-    margin-top: 20px;
   }
-  div > h3 {
-    margin: 5px;
+  #changelog > h3 {
+    padding: 5px;
+    margin: 0;
+    background-color: #eebebe;
   }
-  div > p {
+  #changelog strong {
+    color: #4b3b3c;
+  }
+  #changelog > p {
     padding: 0 5px;
   }
-  div > hr {
-    border-top: 1px dotted black;
+  #changelog > hr {
+    border: none;
+    border-top: 2px dotted black;
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 850px) {
+    #changelog {
+      height: 95px;
+    }
   }
 </style>
+<!--
+    still need to:  set up blog
+                    hide mobile 'show more' if user clicks outside menu
+    -->
 <MainLayout>
   <Fragment slot="left">
-    <h2>welcome to my website!</h2>
+    <h2 style="text-align: center;">welcome to my website!</h2>
   </Fragment>
   <Fragment slot="right">
-    <h2 style=" color: #3d1b28; text-align: center;">🚧 Still To Do 🚧</h2>
-    <input type="checkbox" id="hooked" name="hooked" checked />
-    <label for="hooked">
-      hook comics up (i have to rewrite this myself...)
-    </label>
-    <br />
-    <input type="checkbox" id="notebook" name="notebook" checked />
-    <label for="notebook">
-      edit mobile bg so it looks less goofy on long pages
-    </label>
-    <br />
-    <input type="checkbox" id="blog" name="blog" />
-    <label for="blog">set up blog</label>
-    <br />
-    <input type="checkbox" id="dropdown" name="dropdown" />
-    <label for="dropdown">
-      hide 'show more' dropdown if user clicks outside
-    </label>
-    <div>
+    <h2>check out my most recent comic!</h2>
+    <ComicAbout
+      title="Cursed Relics"
+      date="10-01-2024 to 03-17-2025"
+      img="cursedrelics/1.webp"
+      blurb=`Originally created as part of Andaluza's yearly 'Cursed Relics' drawing challenge, it now has a life of it's own. Follow Bryony and Monilestriel Monilestriel's body as they explore the Florian ruins and the artifacts within. `
+      link="/comics/cursedrelics"
+    />
+    <div id="changelog">
       <h3>Changelog</h3>
       <hr />
-      <p><strong>01-09-2026</strong></p>
+      <p><strong>02-19-2026</strong></p>
       <p>totally new look. in Astro now</p>
-      <hr />
-      <p><strong>09-28-2025</strong></p>
-      <p>New look!</p>
       <hr />
       <p><strong>06-21-2025</strong></p>
       <p>Updated monthly message and added some resources to webhelp page.</p>
