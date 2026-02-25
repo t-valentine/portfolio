@@ -23,26 +23,6 @@ import MainLayout from "../layouts/mainLayout.astro";
 <MainLayout>
   <Fragment slot="left">
     <h2>welcome to my website!</h2>
-    <p>
-      I've been messing around with updating the apperance of this website and
-      ran into a "problem". Basically, this website has a million pages and
-      updating the styling on all of them was super annoying.
-    </p>
-    <p>
-      My solution was to change from a "vanilla" HTML/CSS/JS site to an Astro
-      site! Primarily, the trickiness of this involved rewriting the code for my
-      comics- which was based off <a href="https://rarebit.neocities.org/"
-        >Rarebit</a
-      >. And then I spend a tremendous about of time figuring out how to make a
-      fun website that's functional on mobile.
-    </p>
-    <p>
-      I'm super happy with how this came out! The switch to Astro will make it a
-      lot more fun for me to play more with coding (like my <a
-        href="/misc/pkmnmatch">Pokemon Match</a
-      >) app. And it will make it a lot easier for me to make huge changes to my
-      website.
-    </p>
   </Fragment>
   <Fragment slot="right">
     <h2 style=" color: #3d1b28; text-align: center;">🚧 Still To Do 🚧</h2>
@@ -51,17 +31,17 @@ import MainLayout from "../layouts/mainLayout.astro";
       hook comics up (i have to rewrite this myself...)
     </label>
     <br />
+    <input type="checkbox" id="notebook" name="notebook" checked />
+    <label for="notebook">
+      edit mobile bg so it looks less goofy on long pages
+    </label>
+    <br />
     <input type="checkbox" id="blog" name="blog" />
     <label for="blog">set up blog</label>
     <br />
     <input type="checkbox" id="dropdown" name="dropdown" />
     <label for="dropdown">
       hide 'show more' dropdown if user clicks outside
-    </label>
-    <br />
-    <input type="checkbox" id="notebook" name="notebook" checked />
-    <label for="notebook">
-      edit mobile bg so it looks less goofy on long pages
     </label>
     <div>
       <h3>Changelog</h3>
