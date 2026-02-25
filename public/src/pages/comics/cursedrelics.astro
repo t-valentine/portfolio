@@ -4,7 +4,7 @@ import ComicLayout from "../../layouts/comicLayout.astro";
 
 <ComicLayout
   title="Cursed Relics"
-  pg=`page code to insert - <img alt="" title="" src="../../assets/comics/lindwyrm/pg1.webp" class="comic-page" />`
+  pg=`page code to insert - <img alt="" title="" src="/comics/lindwyrm/pg1.webp" class="comic-page" />`
 >
   <h2>About</h2>
   <p>
@@ -33,7 +33,7 @@ import ComicLayout from "../../layouts/comicLayout.astro";
     let pg = Number(findGetParameter("pg")); //make "pg" mean the current page number (this line doesnt work unless I put it here, if you're inexperienced with js dont worry about it)
 
     // COMIC PAGE SETTINGS
-    const folder = "../../../public/comics/cursedrelics"; //directory of the folder where you keep all the comics
+    const folder = "/comics/cursedrelics"; //directory of the folder where you keep all the comics
     const image = ""; //what you'll name all your comic pages
     const ext = "webp"; //file extension of your comic pages
 
