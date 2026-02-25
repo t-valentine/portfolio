@@ -8,7 +8,7 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{!title ? "honey hamster" : title.toLowerCase()}</title>
-    <link rel="icon" type="image/x-icon" href="../../public/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
   </head>
   <body>
     <main>
@@ -39,7 +39,7 @@ const { title } = Astro.props;
         <slot />
         <p>Powered by</p>
         <a href="https://rarebit.neocities.org" target="_blank">
-          <img src="../../../public/rarebitlogo_small.png" height="30" />
+          <img src="/rarebitlogo_small.png" height="30" />
         </a>
         <div id="footer">
           <a href="/comics/">all Comics</a>
@@ -50,7 +50,7 @@ const { title } = Astro.props;
     <script defer>
       //NAVIGATION SETTINGS
       const navText = ["First", "Previous", "Next", "Last"]; //alt text for your nav images, or just the text that shows up if you're not using images
-      const navFolder = "../../../public/comics/comicnav"; //directory where nav images are stored
+      const navFolder = "/comics/comicnav"; //directory where nav images are stored
       const navExt = "png"; //file extension of nav images
       const navScrollTo = "#showComic"; //id of the div you want the page to automatically scroll to when you click to the next comic. will turn off if you delete text between quotation marks
 
@@ -86,6 +86,7 @@ const { title } = Astro.props;
           partExtension +
           "." +
           ext; //path for your comics made out of variables strung together
+        console.log(path);
         let page = ``;
 
         if (pgData.length < pg) {
