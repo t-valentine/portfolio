@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ComicAbout from "./components/comic-about.astro";
+---
+
+<style>
+  #comics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+
+  .button-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .button-gallery img {
+    height: 31px;
+    width: 88px;
+  }
+  @media all and (max-width: 700px) {
+    #comics {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 1750px) {
+    div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+<BaseLayout>
+  <h2>Comics I Made</h2>
+  <div id="comics">
+    <ComicAbout
+      title="Cursed Relics"
+      date="10-01-2024 to 03-17-2025"
+      img="cursedrelics/1.webp"
+      blurb=`Originally created as part of Andaluza's yearly 'Cursed Relics' drawing challenge, it now has a life of it's own. Follow Bryony and Monilestriel Monilestriel's body as they explore the Florian ruins and the artifacts within. `
+      link="/comics/cursedrelics"
+    />
+    <ComicAbout
+      title="The Lindwyrm"
+      date="08-21-2022"
+      img="lindwyrm/pg1.webp"
+      blurb=" A 4 page comic completed for Hivework's MicroComics Summer event. This comic is a re-telling of the lindworm fairy tale. "
+      link="/comics/lindwyrm"
+    />
+    <ComicAbout
+      title="Heavy is the Head"
+      date="01-06-2021"
+      img="hitd/pg1.webp"
+      blurb=`"The Circinae family’s demise came in the form of a coup d'etat. The infamous empire quickly crumbled without the royal family’s iron fist, and the country found itself able to heal and grow for the first time in 350 years.” `
+      link="/comics/hitd"
+    />
+  </div>
+  <h2 style="margin-bottom: 0;">Comics I Like</h2>
+  <div class="two-p">
+    <div>
+      <h3>Ongoing Webcomics</h3>
+      <div class="button-gallery">
+        <a href="https://bone.dance/">
+          <img
+            src="/buttons/comic-recs/dancingbones.webp"
+            alt="The Dancing Bones"
+          />
+        </a>
+        <a href="https://www.fairmeadowcomic.com/">
+          <img src="/buttons/comic-recs/fairmeadow.webp" alt="fairmeadow" />
+        </a>
+        <a href="https://glimmercomic.neocities.org/">
+          <img
+            src="/buttons/comic-recs/glimmer.webp"
+            style="background-color: black;"
+            alt="glimmer"
+          />
+        </a>
+        <a href="https://heirsoftheveil.com/">
+          <img src="/buttons/comic-recs/hotv.webp" alt="heirs of the veil" />
+        </a>
+        <a href="https://kingsofsorts.com">
+          <img src="/buttons/comic-recs/kos.webp" alt="kings of sorts" />
+        </a>
+        <a href="https://lunarblight.com/">
+          <img src="/buttons/comic-recs/lunarblight.webp" alt="lunar blight" />
+        </a>
+        <a href="https://www.phantomarine.com/">
+          <img src="/buttons/comic-recs/phantomarine.webp" alt="phantomarine" />
+        </a>
+        <a href="https://www.preenycomic.com/">
+          <img
+            src="/buttons/comic-recs/preeny.webp"
+            alt="preeny has to repeat 5th grade"
+          />
+        </a>
+        <a href="https://prophetofthesun.com">
+          <img src="/buttons/comic-recs/pots.gif" alt="prophet of the sun" />
+        </a>
+        <a href="https://star.cinnamuff.space/">
+          <img src="/buttons/comic-recs/starquest.webp" alt="starquest" />
+        </a>
+        <a href="https://yokokasquest.com/">
+          <img
+            src="/buttons/comic-recs/yokokasquest.webp"
+            alt="yokoka's quest"
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <h3>Finished Webcomics</h3>
+      <div class="button-gallery">
+        <a href="https://www.kochab-comic.com/">
+          <img src="/buttons/comic-recs/kocab.webp" alt="kochab" />
+        </a>
+        <a href="https://hamboneslamdome.tumblr.com/">
+          <img src="/buttons/comic-recs/witchheart.webp" alt="witch heart" />
+        </a>
+      </div>
+      <h3>Other Comics/Comics Adjacent Things</h3>
+      <ul>
+        <li>
+          <a href="https://www.sbnation.com/a/17776-football">
+            17776 (What Football Will Look Like in the Future)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,28 @@
+---
+const { frontmatter } = Astro.props;
+const imageSize = frontmatter.imageSize;
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<!--STUFF HERE WILL OVERRIDE ALL OTHER STYLES - BEWARE --><!--I've tried to make them as ultra-specific as possible -->
+<style is:global define:vars={{ imageSize }}>
+  p:has(img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  p:has(img) img {
+    max-width: var(--imageSize);
+    max-height: calc(var(--imageSize) * 1.5);
+  }
+</style>
+<BaseLayout>
+  <html>
+    <meta charset="utf-8" />
+    <h2>{frontmatter.title}</h2>
+    <p>Posted on {frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <slot />
+  </html>
+</BaseLayout>

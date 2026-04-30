@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --white: #f6f4e8; /* global scope */
+  --black: #32362f;
+  --link: #4c2719;
+  --accent-mint: #e5eee4;
+  --dark-mint: #c0e1d2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 16px;
+  background-color: var(--dark-mint);
+  color: var(--black);
+}
+
+a {
+  color: var(--link);
+}
+
+a[href^="http"]:where(:not(:has(img), [href*="domain.tld/"]))::after {
+  content: "↗";
+}
+
+#header {
+  background-color: var(--dark-mint);
+  background: url(/solar_system.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: calc(100vw / 7);
+  min-height: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  background-color: var(--accent-mint);
+  padding: 10px;
+  margin: 0px 10%; /**needs to match content's*/
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav a {
+  padding: 5px 15px;
+  border-radius: 9px;
+}
+
+#nav a:hover {
+  background-color: #b87b7b;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#content {
+  background-color: var(--white);
+  margin: 0px 10%; /**needs to match nav's*/
+  padding: 5px 20px;
+}
+
+.two-p {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem;
+}
+
+.writePageClickable img {
+  max-width: 700px;
+  width: 100%;
+}
+
+@media all and (max-width: 650px) {
+  .two-p {
+    grid-template-columns: 1fr;
+  }
+  .two-p div:last-of-type {
+    border-top: 1px dotted var(--black);
+  }
+}
+
+@media all and (max-width: 550px) {
+  #nav,
+  #content {
+    margin: 0;
+  }
+}

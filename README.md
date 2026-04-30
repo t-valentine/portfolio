@@ -1,7 +1,43 @@
-# Portfolio
+# Astro Starter Kit: Minimal
 
-A website for me to post art and comics I draw. It can be viewed on [neocities](https://h0neymice.neocities.org).
+```sh
+npm create astro@latest -- --template minimal
+```
 
-Thank you to [Rarebit](https://rarebit.neocities.org/) for creating an easy to use template for posting comics. This portfolio uses a heavily modified version of their code.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Additional thank you to [sqvrltastic](https://sqvrltastic.github.io/blog/full-guide-to-rss.html) for the very clear RSS tutorial. Without the tutorial, the RSS feed would be in shambles.
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

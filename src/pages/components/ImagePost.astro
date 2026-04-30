@@ -1,0 +1,20 @@
+---
+const { title, url, imageUrl, pubDate } = Astro.props;
+---
+
+<style>
+  li {
+    border: 1px solid var(--black);
+    background-color: var(--accent-mint);
+    width: 450px;
+    max-width: 80%;
+  }
+  img {
+    width: 100%;
+  }
+</style>
+<li>
+  <img src={imageUrl} alt={title} />
+  <br />
+  <a href={url}>{title}</a> ({pubDate})
+</li>

@@ -1,0 +1,95 @@
+---
+const { posts } = Astro.props;
+---
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    grid-auto-flow: row dense;
+  }
+  @media all and (max-width: 750px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media all and (max-width: 450px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  .post {
+    background-color: var(--accent-mint);
+    color: var(--black);
+    border-radius: 8px;
+    padding: 10px;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    max-width: 100%;
+    border: 1px solid var(--black);
+    max-height: 250px;
+    max-width: 100%;
+    background-color: white;
+    /**below centers image in post */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .text > div {
+    display: flex;
+  }
+  .text p {
+    margin: 0;
+  }
+  .tags-container {
+    padding: 5px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+  .tags-container a {
+    color: #996c6c;
+  }
+</style>
+<div class="gallery">
+  {
+    posts.map((post: any) => (
+      <div class="post">
+        <img src={post.frontmatter.imageUrl} alt={post.frontmatter.title} />
+        <div class="text">
+          <div>
+            <p style="margin-right: 5px;">{post.frontmatter.title}</p>
+            <p>{post.frontmatter.pubDate.slice(0, 4)}</p>
+          </div>
+          {post.frontmatter.moreInfo && <a href={post.url}>more info...</a>}
+        </div>
+
+        <div class="tags-container">
+          {post.frontmatter.tags.map((tag: string) => (
+            <a href={`/tags/${tag}`}>#{tag}</a>
+          ))}
+        </div>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<style>
+  h3 {
+    margin-top: 5px;
+    padding-top: 0;
+  }
+  @media all and (max-width: 650px) {
+    .two-p div:last-of-type h3:first-of-type {
+      padding-top: 10px;
+    }
+  }
+</style>
+<BaseLayout>
+  <h2>hello! and welcome to my website</h2>
+  <div class="two-p">
+    <div>
+      <p>
+        I'm still getting this new astro website up to speed. I still need to...
+      </p>
+      <input type="checkbox" id="0" name="0" value="0" checked />
+      <label for="0"> Set up art gallery tags</label><br />
+      <input type="checkbox" id="1" name="1" value="1" />
+      <label for="1"> Hook up the blog</label><br />
+      <input type="checkbox" id="2" name="2" value="2" />
+      <label for="2"> Create a non-webcomics recommendation page</label><br />
+    </div>
+    <div>
+      <h3>Upcoming Project: Upon the Starship Cenoby!</h3>
+      <p>
+        A comic about Calliope, one of the main characters for my WIP comic
+        Florere.
+      </p>
+      <h3>Other Pages on this Site</h3>
+      <ul>
+        <li>
+          <a href="/misc/pkmnmatch">Pokemon Match</a>
+        </li>
+        <li><a href="/misc/webhelp">Webhelp</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

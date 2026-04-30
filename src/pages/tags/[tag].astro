@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import Gallery from "../components/Gallery.astro";
+
+export async function getStaticPaths() {
+  const wordsPosts = Object.values(
+    import.meta.glob("../posts/words/*.md", { eager: true }),
+  );
+
+  const artPosts = Object.values(
+    import.meta.glob("../posts/art/*.md", { eager: true }),
+  );
+
+  const allPosts = [...wordsPosts, ...artPosts];
+  /*
+  const allPosts = Object.values(
+    import.meta.glob("../posts/*.md", { eager: true }),
+  );*/
+
+  const uniqueTags = [
+    ...new Set(
+      allPosts.map((post: any) => post.frontmatter?.tags ?? []).flat(),
+    ),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) =>
+      post.frontmatter?.tags?.includes(tag),
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props as { posts: any[] };
+---
+
+<BaseLayout pageTitle={tag}>
+  <h3>Posts tagged with #{tag}</h3>
+  {
+    posts.some((post: any) => post.frontmatter.imageUrl) ? (
+      <Gallery posts={posts} />
+    ) : (
+      <ul>
+        {posts.map((post: any) => (
+          <BlogPost
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate.slice(0, 10)}
+            tags={post.frontmatter.tags}
+          />
+        ))}
+      </ul>
+    )
+  }
+</BaseLayout>

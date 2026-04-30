@@ -1,0 +1,26 @@
+---
+import "./base.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>valentine's website</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="nav">
+      <a href="/">Home</a>
+      <a href="/tags/gallery">Art</a>
+      <a href="/comics">Comics</a>
+      <a href="/about">About Me</a>
+    </div>
+    <div id="content">
+      <slot />
+      <p style="text-align: center;">T.Valentine ©2026</p>
+    </div>
+  </body>
+</html>
