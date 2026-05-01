@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   writeNav(true);
-  writePageClickable(".writePageClickable", true);
-  keyNav();
+
+  writePageClickable(".writePageClickable", true); //show the current page. to toggle whether pages can be clicked to move to the next one, set this to true or false.
+
+  keyNav(); //enables navigation through the comic with the arrow keys and WSAD. It doesn't need a div with a class name, it automatically works. delete or comment out (add // at the beginning) here to disable.
 });
 
 //SHOW COMIC PAGE, with clickable link
