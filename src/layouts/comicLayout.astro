@@ -44,11 +44,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     const navExt = "png"; //file extension of nav images
     const navScrollTo = "#showComic"; //id of the div you want the page to automatically scroll to when you click to the next comic. will turn off if you delete text between quotation marks
 
-    writeNav(true);
+    document.addEventListener("DOMContentLoaded", () => {
+      writeNav(true);
 
-    writePageClickable(".writePageClickable", true); //show the current page. to toggle whether pages can be clicked to move to the next one, set this to true or false.
+      writePageClickable(".writePageClickable", true); //show the current page. to toggle whether pages can be clicked to move to the next one, set this to true or false.
 
-    keyNav(); //enables navigation through the comic with the arrow keys and WSAD. It doesn't need a div with a class name, it automatically works. delete or comment out (add // at the beginning) here to disable.
+      keyNav(); //enables navigation through the comic with the arrow keys and WSAD. It doesn't need a div with a class name, it automatically works. delete or comment out (add // at the beginning) here to disable.
+    });
 
     //SHOW COMIC PAGE, with clickable link
     function writePageClickable(div, clickable) {
